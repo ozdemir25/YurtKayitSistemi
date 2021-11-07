@@ -16,7 +16,7 @@ namespace YurtKayitSistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAnaMenu());
+            Application.Run(new FrmAnaMenu());
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace YurtKayitSistemi
 {
-    public partial class frmAnaMenu : Form
+    public partial class FrmAnaMenu : Form
     {
-        public frmAnaMenu()
+        public FrmAnaMenu()
         {
             InitializeComponent();
         }
@@ -56,6 +56,12 @@ namespace YurtKayitSistemi
         {
             FrmOgrListele frmListele = new FrmOgrListele();
             frmListele.Show();
+        }
+
+        private void öğrenciÖdemesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOdemeler frmOdeme = new FrmOdemeler();
+            frmOdeme.Show();
         }
     }
 }

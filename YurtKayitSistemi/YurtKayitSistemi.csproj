@@ -66,6 +66,12 @@
     <Compile Include="FrmBolumler.Designer.cs">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOdemeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOdemeler.Designer.cs">
+      <DependentUpon>FrmOdemeler.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmOgrKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,11 +102,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtOtomasyonuDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YurtOtomasyonuDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtOtomasyonuDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmAnaMenu.resx">
       <DependentUpon>frmAnaMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOdemeler.resx">
+      <DependentUpon>FrmOdemeler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOgrKayit.resx">
       <DependentUpon>FrmOgrKayit.cs</DependentUpon>
@@ -160,6 +174,17 @@
     </None>
     <None Include="YurtOtomasyonuDataSet2.xss">
       <DependentUpon>YurtOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="YurtOtomasyonuDataSet3.xsc">
+      <DependentUpon>YurtOtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="YurtOtomasyonuDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtOtomasyonuDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtOtomasyonuDataSet3.xss">
+      <DependentUpon>YurtOtomasyonuDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

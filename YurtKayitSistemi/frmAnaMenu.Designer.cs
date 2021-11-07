@@ -1,7 +1,7 @@
 ﻿
 namespace YurtKayitSistemi
 {
-    partial class frmAnaMenu
+    partial class FrmAnaMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace YurtKayitSistemi
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAnaMenu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.öĞRENCİLERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.öğrenciEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -155,6 +155,7 @@ namespace YurtKayitSistemi
             this.öğrenciÖdemesiToolStripMenuItem.Name = "öğrenciÖdemesiToolStripMenuItem";
             this.öğrenciÖdemesiToolStripMenuItem.Size = new System.Drawing.Size(258, 28);
             this.öğrenciÖdemesiToolStripMenuItem.Text = "Öğrenci Ödemesi";
+            this.öğrenciÖdemesiToolStripMenuItem.Click += new System.EventHandler(this.öğrenciÖdemesiToolStripMenuItem_Click);
             // 
             // gİDERLERToolStripMenuItem
             // 
@@ -345,10 +346,11 @@ namespace YurtKayitSistemi
             this.lblTarih.TabIndex = 30;
             this.lblTarih.Text = "...";
             // 
-            // frmAnaMenu
+            // FrmAnaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1172, 678);
             this.Controls.Add(this.lblTarih);
             this.Controls.Add(this.lblSaat);
@@ -359,7 +361,7 @@ namespace YurtKayitSistemi
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmAnaMenu";
+            this.Name = "FrmAnaMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Menü";
             this.Load += new System.EventHandler(this.frmAnaMenu_Load);
