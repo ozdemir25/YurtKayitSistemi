@@ -17,7 +17,7 @@ namespace YurtKayitSistemi
         {
             InitializeComponent();
         }
-        sqlBaglantim Baglan_ti = new sqlBaglantim();
+        sqlBaglantim bgl = new sqlBaglantim();
         //static string conString = @"Data Source=DESKTOP-0UK1IES;Initial Catalog=YurtOtomasyonu;Integrated Security=True";
         //Bu veritabanına bağlanmak için gerekli olan bağlantı cümlemiz.Bu satıra dikkat edelim.
         //Sql Servera bağlanırken kullandığımız bilgileri ve veritabanı ismini yazıyoruz.
@@ -29,11 +29,11 @@ namespace YurtKayitSistemi
             //Güncelleme İşlemi Yapılan Alan
             try
             {
-                SqlCommand komut2 = new SqlCommand("update Bolumler Set BolumAd=@BolumAd where BolumId=@BolumId", Baglan_ti.baglanti());
+                SqlCommand komut2 = new SqlCommand("update Bolumler Set BolumAd=@BolumAd where BolumId=@BolumId", bgl.baglanti());
                 komut2.Parameters.AddWithValue("BolumId", txtBolumId.Text);
                 komut2.Parameters.AddWithValue("BolumAd", txtBolumAdi.Text);
                 komut2.ExecuteNonQuery();
-                Baglan_ti.baglanti().Close();
+                bgl.baglanti().Close();
                 MessageBox.Show("Kayıt Göncellendi.");
                 BolumlerKayitGetir();
             }
@@ -53,12 +53,12 @@ namespace YurtKayitSistemi
         {
             //Bölümler Tablosundaki verileri getirir.
             string kayit = "Select * From Bolumler";
-            SqlCommand komut = new SqlCommand(kayit, Baglan_ti.baglanti());
+            SqlCommand komut = new SqlCommand(kayit, bgl.baglanti());
             SqlDataAdapter da = new SqlDataAdapter(komut);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
-            Baglan_ti.baglanti().Close();
+            bgl.baglanti().Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -66,18 +66,18 @@ namespace YurtKayitSistemi
             //Bölüm Ekleme İşlemi
             try
             {
-                if (Baglan_ti.baglanti().State == ConnectionState.Closed)
-                    Baglan_ti.baglanti().Open();
+                if (bgl.baglanti().State == ConnectionState.Closed)
+                    bgl.baglanti().Open();
                 // Bağlantımızı kontrol ediyoruz, eğer kapalıysa açıyoruz.
                 string kayit = "insert into Bolumler(BolumAd) values (@BolumAdi)";
                 // Ogrenci tablomuzun ilgili alanlarına kayıt ekleme işlemini gerçekleştirecek sorgumuz.
-                SqlCommand komut3 = new SqlCommand(kayit, Baglan_ti.baglanti());
+                SqlCommand komut3 = new SqlCommand(kayit, bgl.baglanti());
                 //Sorgumuzu ve baglantimizi parametre olarak alan bir SqlCommand nesnesi oluşturuyoruz.
                 komut3.Parameters.AddWithValue("@BolumAdi", txtBolumAdi.Text);
                 //Parametrelerimize Form üzerinde ki kontrollerden girilen verileri aktarıyoruz.
                 komut3.ExecuteNonQuery();
                 //Veritabanında değişiklik yapacak komut işlemi bu satırda gerçekleşiyor.
-                Baglan_ti.baglanti().Close();
+                bgl.baglanti().Close();
                 MessageBox.Show("Kayıt Tamamlandı.");
                 BolumlerKayitGetir();
 
@@ -94,10 +94,10 @@ namespace YurtKayitSistemi
             try
             {
                 
-                SqlCommand komut2 = new SqlCommand("delete from Bolumler where BolumId=@BolumId", Baglan_ti.baglanti());
+                SqlCommand komut2 = new SqlCommand("delete from Bolumler where BolumId=@BolumId", bgl.baglanti());
                 komut2.Parameters.AddWithValue("BolumId", txtBolumId.Text);
                 komut2.ExecuteNonQuery();
-                Baglan_ti.baglanti().Close();
+                bgl.baglanti().Close();
                 MessageBox.Show("Kayıt  Silindi.");
                 //Bölüm Silindikten sonra verilerin güncellenmesi için yeniden verileri çağırıyoruz.
                 BolumlerKayitGetir();
@@ -119,6 +119,11 @@ namespace YurtKayitSistemi
 
             txtBolumId.Text = id;
             txtBolumAdi.Text = bolumAd;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

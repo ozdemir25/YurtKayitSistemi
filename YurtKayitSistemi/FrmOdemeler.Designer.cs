@@ -36,28 +36,32 @@ namespace YurtKayitSistemi
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtKalanBorc = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnOdemeAl = new System.Windows.Forms.Button();
-            this.yurtOtomasyonuDataSet3 = new YurtKayitSistemi.YurtOtomasyonuDataSet3();
-            this.borclarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.borclarTableAdapter = new YurtKayitSistemi.YurtOtomasyonuDataSet3TableAdapters.BorclarTableAdapter();
-            this.txtOgrenciid = new System.Windows.Forms.TextBox();
             this.ogridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrKalanBorcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.borclarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtOtomasyonuDataSet3 = new YurtKayitSistemi.YurtOtomasyonuDataSet3();
+            this.txtKalanBorc = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnOdemeAl = new System.Windows.Forms.Button();
+            this.borclarTableAdapter = new YurtKayitSistemi.YurtOtomasyonuDataSet3TableAdapters.BorclarTableAdapter();
+            this.txtOgrenciid = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.borclarBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // txtOdenenTutar
             // 
             this.txtOdenenTutar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOdenenTutar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdenenTutar.Location = new System.Drawing.Point(949, 266);
+            this.txtOdenenTutar.Location = new System.Drawing.Point(949, 279);
             this.txtOdenenTutar.Name = "txtOdenenTutar";
             this.txtOdenenTutar.Size = new System.Drawing.Size(282, 30);
             this.txtOdenenTutar.TabIndex = 11;
@@ -66,7 +70,7 @@ namespace YurtKayitSistemi
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(817, 272);
+            this.label2.Location = new System.Drawing.Point(817, 285);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 24);
             this.label2.TabIndex = 10;
@@ -76,7 +80,7 @@ namespace YurtKayitSistemi
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(843, 219);
+            this.label1.Location = new System.Drawing.Point(843, 139);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 24);
             this.label1.TabIndex = 8;
@@ -107,59 +111,7 @@ namespace YurtKayitSistemi
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(684, 622);
             this.dataGridView1.TabIndex = 28;
-            // 
-            // txtKalanBorc
-            // 
-            this.txtKalanBorc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtKalanBorc.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKalanBorc.Location = new System.Drawing.Point(949, 317);
-            this.txtKalanBorc.Name = "txtKalanBorc";
-            this.txtKalanBorc.Size = new System.Drawing.Size(282, 30);
-            this.txtKalanBorc.TabIndex = 30;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(837, 320);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 24);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Kalan Borç :";
-            // 
-            // btnOdemeAl
-            // 
-            this.btnOdemeAl.BackColor = System.Drawing.Color.Lime;
-            this.btnOdemeAl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeAl.Location = new System.Drawing.Point(1004, 372);
-            this.btnOdemeAl.Name = "btnOdemeAl";
-            this.btnOdemeAl.Size = new System.Drawing.Size(158, 55);
-            this.btnOdemeAl.TabIndex = 31;
-            this.btnOdemeAl.Text = "Ödeme Al";
-            this.btnOdemeAl.UseVisualStyleBackColor = false;
-            // 
-            // yurtOtomasyonuDataSet3
-            // 
-            this.yurtOtomasyonuDataSet3.DataSetName = "YurtOtomasyonuDataSet3";
-            this.yurtOtomasyonuDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // borclarBindingSource
-            // 
-            this.borclarBindingSource.DataMember = "Borclar";
-            this.borclarBindingSource.DataSource = this.yurtOtomasyonuDataSet3;
-            // 
-            // borclarTableAdapter
-            // 
-            this.borclarTableAdapter.ClearBeforeFill = true;
-            // 
-            // txtOgrenciid
-            // 
-            this.txtOgrenciid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOgrenciid.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOgrenciid.Location = new System.Drawing.Point(949, 216);
-            this.txtOgrenciid.Name = "txtOgrenciid";
-            this.txtOgrenciid.Size = new System.Drawing.Size(282, 30);
-            this.txtOgrenciid.TabIndex = 32;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // ogridDataGridViewTextBoxColumn
             // 
@@ -193,12 +145,108 @@ namespace YurtKayitSistemi
             this.ogrKalanBorcDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ogrKalanBorcDataGridViewTextBoxColumn.Name = "ogrKalanBorcDataGridViewTextBoxColumn";
             // 
+            // borclarBindingSource
+            // 
+            this.borclarBindingSource.DataMember = "Borclar";
+            this.borclarBindingSource.DataSource = this.yurtOtomasyonuDataSet3;
+            // 
+            // yurtOtomasyonuDataSet3
+            // 
+            this.yurtOtomasyonuDataSet3.DataSetName = "YurtOtomasyonuDataSet3";
+            this.yurtOtomasyonuDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // txtKalanBorc
+            // 
+            this.txtKalanBorc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtKalanBorc.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKalanBorc.Location = new System.Drawing.Point(949, 325);
+            this.txtKalanBorc.Name = "txtKalanBorc";
+            this.txtKalanBorc.Size = new System.Drawing.Size(282, 30);
+            this.txtKalanBorc.TabIndex = 30;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(837, 328);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 24);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Kalan Borç :";
+            // 
+            // btnOdemeAl
+            // 
+            this.btnOdemeAl.BackColor = System.Drawing.Color.Lime;
+            this.btnOdemeAl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeAl.Location = new System.Drawing.Point(1008, 391);
+            this.btnOdemeAl.Name = "btnOdemeAl";
+            this.btnOdemeAl.Size = new System.Drawing.Size(158, 55);
+            this.btnOdemeAl.TabIndex = 31;
+            this.btnOdemeAl.Text = "Ödeme Al";
+            this.btnOdemeAl.UseVisualStyleBackColor = false;
+            this.btnOdemeAl.Click += new System.EventHandler(this.btnOdemeAl_Click);
+            // 
+            // borclarTableAdapter
+            // 
+            this.borclarTableAdapter.ClearBeforeFill = true;
+            // 
+            // txtOgrenciid
+            // 
+            this.txtOgrenciid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOgrenciid.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtOgrenciid.Location = new System.Drawing.Point(949, 136);
+            this.txtOgrenciid.Name = "txtOgrenciid";
+            this.txtOgrenciid.Size = new System.Drawing.Size(282, 30);
+            this.txtOgrenciid.TabIndex = 32;
+            // 
+            // txtAd
+            // 
+            this.txtAd.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAd.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAd.Location = new System.Drawing.Point(949, 185);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(282, 30);
+            this.txtAd.TabIndex = 34;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(902, 188);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 24);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Ad :";
+            // 
+            // txtSoyad
+            // 
+            this.txtSoyad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSoyad.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSoyad.Location = new System.Drawing.Point(949, 232);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(282, 30);
+            this.txtSoyad.TabIndex = 36;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(874, 238);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 24);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "Soyad :";
+            // 
             // FrmOdemeler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1320, 792);
+            this.Controls.Add(this.txtSoyad);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtAd);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtOgrenciid);
             this.Controls.Add(this.btnOdemeAl);
             this.Controls.Add(this.txtKalanBorc);
@@ -215,8 +263,8 @@ namespace YurtKayitSistemi
             this.Load += new System.EventHandler(this.FrmOdemeler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.borclarBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,5 +288,9 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.DataGridViewTextBoxColumn ogrAdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ogrSoyadDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ogrKalanBorcDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtSoyad;
+        private System.Windows.Forms.Label label5;
     }
 }
