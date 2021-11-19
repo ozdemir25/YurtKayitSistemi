@@ -63,5 +63,23 @@ namespace YurtKayitSistemi
             FrmOdemeler frmOdeme = new FrmOdemeler();
             frmOdeme.Show();
         }
+
+        private void öğrenciDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*FrmOgrDuzenle frmDuzenle = new FrmOgrDuzenle();
+            frmDuzenle.Show();*/
+        }
+
+        private void gİDEREKLEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGiderler frmGider = new FrmGiderler();
+            frmGider.Show();
+        }
+
+        private void giderListeleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGiderDuzenle frmGiderDuzenle = new FrmGiderDuzenle();
+            frmGiderDuzenle.Show();
+        }
     }
 }

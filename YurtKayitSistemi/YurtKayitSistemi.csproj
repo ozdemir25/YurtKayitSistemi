@@ -66,6 +66,18 @@
     <Compile Include="FrmBolumler.Designer.cs">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGiderDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiderDuzenle.Designer.cs">
+      <DependentUpon>FrmGiderDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiderler.Designer.cs">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmOdemeler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,11 +125,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtOtomasyonuDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YurtOtomasyonuDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtOtomasyonuDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmAnaMenu.resx">
       <DependentUpon>frmAnaMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiderDuzenle.resx">
+      <DependentUpon>FrmGiderDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiderler.resx">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOdemeler.resx">
       <DependentUpon>FrmOdemeler.cs</DependentUpon>
@@ -194,6 +217,17 @@
     </None>
     <None Include="YurtOtomasyonuDataSet3.xss">
       <DependentUpon>YurtOtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="YurtOtomasyonuDataSet4.xsc">
+      <DependentUpon>YurtOtomasyonuDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="YurtOtomasyonuDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtOtomasyonuDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtOtomasyonuDataSet4.xss">
+      <DependentUpon>YurtOtomasyonuDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
