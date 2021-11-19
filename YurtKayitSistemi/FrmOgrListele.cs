@@ -22,11 +22,19 @@ namespace YurtKayitSistemi
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet2.Ogrenci' table. You can move, or remove it, as needed.
             this.ogrenciTableAdapter.Fill(this.yurtOtomasyonuDataSet2.Ogrenci);
 
+            MessageBox.Show("Öğrenciyi Güncellemek için Öğrencinin üzerine tek tıklamanız yeterlidir.");
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+        }
+        int secilen;
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            secilen = dataGridView1.SelectedCells[0].RowIndex;
+            FrmOgrDuzenle fr = new FrmOgrDuzenle();
+            fr.id = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            fr.Show();
         }
     }
 }
