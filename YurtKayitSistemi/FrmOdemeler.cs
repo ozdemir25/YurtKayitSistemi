@@ -24,6 +24,7 @@ namespace YurtKayitSistemi
         {
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet3.Borclar' table. You can move, or remove it, as needed.
             this.borclarTableAdapter.Fill(this.yurtOtomasyonuDataSet3.Borclar);
+            dataGridView1.Columns[0].Width = 80;
 
         }
 
@@ -60,6 +61,14 @@ namespace YurtKayitSistemi
             bgl.baglanti().Close();
             MessageBox.Show(odenen + " TL Ödendi.");
             this.borclarTableAdapter.Fill(this.yurtOtomasyonuDataSet3.Borclar);
+
+            //Kasa tablosuna ekleme işlemi.
+            SqlCommand komut2 = new SqlCommand("insert into Kasa(OdemeAy,OdemeMiktar) values(@A1,@A2)", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@A1", cmbOdemeAy.Text);
+            komut2.Parameters.AddWithValue("@A2", txtOdenenTutar.Text);
+            komut2.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
         }
     }
 }

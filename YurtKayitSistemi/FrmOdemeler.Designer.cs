@@ -51,6 +51,8 @@ namespace YurtKayitSistemi
             this.label4 = new System.Windows.Forms.Label();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbOdemeAy = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.borclarBindingSource)).BeginInit();
@@ -61,7 +63,7 @@ namespace YurtKayitSistemi
             // 
             this.txtOdenenTutar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOdenenTutar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdenenTutar.Location = new System.Drawing.Point(949, 279);
+            this.txtOdenenTutar.Location = new System.Drawing.Point(958, 295);
             this.txtOdenenTutar.Name = "txtOdenenTutar";
             this.txtOdenenTutar.Size = new System.Drawing.Size(282, 30);
             this.txtOdenenTutar.TabIndex = 11;
@@ -70,7 +72,7 @@ namespace YurtKayitSistemi
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(817, 285);
+            this.label2.Location = new System.Drawing.Point(826, 301);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 24);
             this.label2.TabIndex = 10;
@@ -80,7 +82,7 @@ namespace YurtKayitSistemi
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(843, 139);
+            this.label1.Location = new System.Drawing.Point(852, 155);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 24);
             this.label1.TabIndex = 8;
@@ -159,7 +161,7 @@ namespace YurtKayitSistemi
             // 
             this.txtKalanBorc.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtKalanBorc.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKalanBorc.Location = new System.Drawing.Point(949, 325);
+            this.txtKalanBorc.Location = new System.Drawing.Point(958, 341);
             this.txtKalanBorc.Name = "txtKalanBorc";
             this.txtKalanBorc.Size = new System.Drawing.Size(282, 30);
             this.txtKalanBorc.TabIndex = 30;
@@ -168,7 +170,7 @@ namespace YurtKayitSistemi
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(837, 328);
+            this.label3.Location = new System.Drawing.Point(846, 344);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 24);
             this.label3.TabIndex = 29;
@@ -178,7 +180,7 @@ namespace YurtKayitSistemi
             // 
             this.btnOdemeAl.BackColor = System.Drawing.Color.Lime;
             this.btnOdemeAl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeAl.Location = new System.Drawing.Point(1008, 391);
+            this.btnOdemeAl.Location = new System.Drawing.Point(1020, 457);
             this.btnOdemeAl.Name = "btnOdemeAl";
             this.btnOdemeAl.Size = new System.Drawing.Size(158, 55);
             this.btnOdemeAl.TabIndex = 31;
@@ -194,7 +196,7 @@ namespace YurtKayitSistemi
             // 
             this.txtOgrenciid.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOgrenciid.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOgrenciid.Location = new System.Drawing.Point(949, 136);
+            this.txtOgrenciid.Location = new System.Drawing.Point(958, 152);
             this.txtOgrenciid.Name = "txtOgrenciid";
             this.txtOgrenciid.Size = new System.Drawing.Size(282, 30);
             this.txtOgrenciid.TabIndex = 32;
@@ -203,7 +205,7 @@ namespace YurtKayitSistemi
             // 
             this.txtAd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAd.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAd.Location = new System.Drawing.Point(949, 185);
+            this.txtAd.Location = new System.Drawing.Point(958, 201);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(282, 30);
             this.txtAd.TabIndex = 34;
@@ -212,7 +214,7 @@ namespace YurtKayitSistemi
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(902, 188);
+            this.label4.Location = new System.Drawing.Point(911, 204);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 24);
             this.label4.TabIndex = 33;
@@ -222,7 +224,7 @@ namespace YurtKayitSistemi
             // 
             this.txtSoyad.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSoyad.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSoyad.Location = new System.Drawing.Point(949, 232);
+            this.txtSoyad.Location = new System.Drawing.Point(958, 248);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(282, 30);
             this.txtSoyad.TabIndex = 36;
@@ -231,11 +233,43 @@ namespace YurtKayitSistemi
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(874, 238);
+            this.label5.Location = new System.Drawing.Point(883, 254);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 24);
             this.label5.TabIndex = 35;
             this.label5.Text = "Soyad :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(846, 392);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 24);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Odenen Ay :";
+            // 
+            // cmbOdemeAy
+            // 
+            this.cmbOdemeAy.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbOdemeAy.FormattingEnabled = true;
+            this.cmbOdemeAy.Items.AddRange(new object[] {
+            "Ocak",
+            "Şubat",
+            "Mart",
+            "Nisan",
+            "Mayıs",
+            "Haziran",
+            "Temmuz",
+            "Ağustos",
+            "Eylül",
+            "Ekim",
+            "Kasım",
+            "Aralık"});
+            this.cmbOdemeAy.Location = new System.Drawing.Point(958, 389);
+            this.cmbOdemeAy.Name = "cmbOdemeAy";
+            this.cmbOdemeAy.Size = new System.Drawing.Size(282, 32);
+            this.cmbOdemeAy.TabIndex = 38;
             // 
             // FrmOdemeler
             // 
@@ -243,6 +277,8 @@ namespace YurtKayitSistemi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1320, 792);
+            this.Controls.Add(this.cmbOdemeAy);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtAd);
@@ -292,5 +328,7 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbOdemeAy;
     }
 }

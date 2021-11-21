@@ -359,6 +359,7 @@ namespace YurtKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1229, 680);
             this.Controls.Add(this.txtOdemeid);
             this.Controls.Add(this.label8);

@@ -43,6 +43,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAdminGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminGirisi.Designer.cs">
+      <DependentUpon>FrmAdminGirisi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAnaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +72,12 @@
     </Compile>
     <Compile Include="FrmBolumler.Designer.cs">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGelirIstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGelirIstatistik.Designer.cs">
+      <DependentUpon>FrmGelirIstatistik.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmGiderDuzenle.cs">
       <SubType>Form</SubType>
@@ -130,11 +143,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtOtomasyonuDataSet4.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmAdminGirisi.resx">
+      <DependentUpon>FrmAdminGirisi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAnaMenu.resx">
       <DependentUpon>frmAnaMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGelirIstatistik.resx">
+      <DependentUpon>FrmGelirIstatistik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGiderDuzenle.resx">
       <DependentUpon>FrmGiderDuzenle.cs</DependentUpon>

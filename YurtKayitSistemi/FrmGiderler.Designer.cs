@@ -69,7 +69,7 @@ namespace YurtKayitSistemi
             this.label12.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label12.Location = new System.Drawing.Point(506, 49);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(189, 51);
+            this.label12.Size = new System.Drawing.Size(187, 51);
             this.label12.TabIndex = 28;
             this.label12.Text = "Giderler";
             // 
@@ -243,6 +243,7 @@ namespace YurtKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1185, 692);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
