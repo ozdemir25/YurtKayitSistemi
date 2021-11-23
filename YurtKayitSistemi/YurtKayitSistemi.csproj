@@ -115,6 +115,12 @@
     <Compile Include="FrmOgrListele.Designer.cs">
       <DependentUpon>FrmOgrListele.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmYoneticiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYoneticiDuzenle.Designer.cs">
+      <DependentUpon>FrmYoneticiDuzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlBaglantim.cs" />
@@ -163,6 +169,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtOtomasyonuDataSet8.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YurtOtomasyonuDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtOtomasyonuDataSet9.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmAdminGirisi.resx">
       <DependentUpon>FrmAdminGirisi.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOgrListele.resx">
       <DependentUpon>FrmOgrListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYoneticiDuzenle.resx">
+      <DependentUpon>FrmYoneticiDuzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -311,6 +325,17 @@
     </None>
     <None Include="YurtOtomasyonuDataSet8.xss">
       <DependentUpon>YurtOtomasyonuDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="YurtOtomasyonuDataSet9.xsc">
+      <DependentUpon>YurtOtomasyonuDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="YurtOtomasyonuDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtOtomasyonuDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtOtomasyonuDataSet9.xss">
+      <DependentUpon>YurtOtomasyonuDataSet9.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -81,5 +81,11 @@ namespace YurtKayitSistemi
             FrmGiderDuzenle frmGiderDuzenle = new FrmGiderDuzenle();
             frmGiderDuzenle.Show();
         }
+
+        private void yöneticiEkleSilGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmYoneticiDuzenle frmYoneticiDuzenle = new FrmYoneticiDuzenle();
+            frmYoneticiDuzenle.Show();
+        }
     }
 }
