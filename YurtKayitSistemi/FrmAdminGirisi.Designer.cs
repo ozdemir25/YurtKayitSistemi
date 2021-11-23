@@ -89,6 +89,7 @@ namespace YurtKayitSistemi
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(282, 30);
             this.txtKullaniciAdi.TabIndex = 12;
+            this.txtKullaniciAdi.Text = "Muhammet";
             // 
             // txtSifre
             // 
@@ -98,6 +99,7 @@ namespace YurtKayitSistemi
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(282, 30);
             this.txtSifre.TabIndex = 13;
+            this.txtSifre.Text = "999";
             // 
             // FrmAdminGirisi
             // 

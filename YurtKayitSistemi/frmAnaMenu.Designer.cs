@@ -65,6 +65,7 @@ namespace YurtKayitSistemi
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblSaat = new System.Windows.Forms.Label();
             this.lblTarih = new System.Windows.Forms.Label();
+            this.yöneticiEkleSilGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -170,14 +171,14 @@ namespace YurtKayitSistemi
             // gİDEREKLEToolStripMenuItem
             // 
             this.gİDEREKLEToolStripMenuItem.Name = "gİDEREKLEToolStripMenuItem";
-            this.gİDEREKLEToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.gİDEREKLEToolStripMenuItem.Size = new System.Drawing.Size(214, 28);
             this.gİDEREKLEToolStripMenuItem.Text = "Gider Ekle";
             this.gİDEREKLEToolStripMenuItem.Click += new System.EventHandler(this.gİDEREKLEToolStripMenuItem_Click);
             // 
             // giderListeleToolStripMenuItem
             // 
             this.giderListeleToolStripMenuItem.Name = "giderListeleToolStripMenuItem";
-            this.giderListeleToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.giderListeleToolStripMenuItem.Size = new System.Drawing.Size(214, 28);
             this.giderListeleToolStripMenuItem.Text = "Gider Listele";
             this.giderListeleToolStripMenuItem.Click += new System.EventHandler(this.giderListeleToolStripMenuItem_Click);
             // 
@@ -205,6 +206,7 @@ namespace YurtKayitSistemi
             // yÖNETİCİToolStripMenuItem
             // 
             this.yÖNETİCİToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yöneticiEkleSilGüncelleToolStripMenuItem,
             this.şifreİşlemleriToolStripMenuItem,
             this.personelDüzenlemeToolStripMenuItem,
             this.hakkımızdaToolStripMenuItem,
@@ -216,25 +218,25 @@ namespace YurtKayitSistemi
             // şifreİşlemleriToolStripMenuItem
             // 
             this.şifreİşlemleriToolStripMenuItem.Name = "şifreİşlemleriToolStripMenuItem";
-            this.şifreİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(286, 28);
+            this.şifreİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(346, 28);
             this.şifreİşlemleriToolStripMenuItem.Text = "Şifre İşlemleri";
             // 
             // personelDüzenlemeToolStripMenuItem
             // 
             this.personelDüzenlemeToolStripMenuItem.Name = "personelDüzenlemeToolStripMenuItem";
-            this.personelDüzenlemeToolStripMenuItem.Size = new System.Drawing.Size(286, 28);
+            this.personelDüzenlemeToolStripMenuItem.Size = new System.Drawing.Size(346, 28);
             this.personelDüzenlemeToolStripMenuItem.Text = "Personel Düzenleme";
             // 
             // hakkımızdaToolStripMenuItem
             // 
             this.hakkımızdaToolStripMenuItem.Name = "hakkımızdaToolStripMenuItem";
-            this.hakkımızdaToolStripMenuItem.Size = new System.Drawing.Size(286, 28);
+            this.hakkımızdaToolStripMenuItem.Size = new System.Drawing.Size(346, 28);
             this.hakkımızdaToolStripMenuItem.Text = "Hakkımızda";
             // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(286, 28);
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(346, 28);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
@@ -349,6 +351,12 @@ namespace YurtKayitSistemi
             this.lblTarih.TabIndex = 30;
             this.lblTarih.Text = "...";
             // 
+            // yöneticiEkleSilGüncelleToolStripMenuItem
+            // 
+            this.yöneticiEkleSilGüncelleToolStripMenuItem.Name = "yöneticiEkleSilGüncelleToolStripMenuItem";
+            this.yöneticiEkleSilGüncelleToolStripMenuItem.Size = new System.Drawing.Size(346, 28);
+            this.yöneticiEkleSilGüncelleToolStripMenuItem.Text = "Yönetici Ekle, Sil, Güncelle";
+            // 
             // FrmAnaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -415,5 +423,6 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblSaat;
         private System.Windows.Forms.Label lblTarih;
+        private System.Windows.Forms.ToolStripMenuItem yöneticiEkleSilGüncelleToolStripMenuItem;
     }
 }
