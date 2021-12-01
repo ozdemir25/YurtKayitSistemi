@@ -87,5 +87,16 @@ namespace YurtKayitSistemi
             FrmYoneticiDuzenle frmYoneticiDuzenle = new FrmYoneticiDuzenle();
             frmYoneticiDuzenle.Show();
         }
+
+        private void bölümDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //-----------
+        }
+
+        private void gelirİstatistikleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGelirIstatistik frmGelirIstatistik = new FrmGelirIstatistik();
+            frmGelirIstatistik.Show();
+        }
     }
 }
