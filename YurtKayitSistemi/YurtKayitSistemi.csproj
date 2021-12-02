@@ -115,6 +115,12 @@
     <Compile Include="FrmOgrListele.Designer.cs">
       <DependentUpon>FrmOgrListele.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPersonelDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonelDuzenle.Designer.cs">
+      <DependentUpon>FrmPersonelDuzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmYoneticiDuzenle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtOtomasyonuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtOtomasyonuDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtOtomasyonuDataSet10.xsd</DependentUpon>
     </Compile>
     <Compile Include="YurtOtomasyonuDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -204,6 +215,9 @@
     <EmbeddedResource Include="FrmOgrListele.resx">
       <DependentUpon>FrmOgrListele.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonelDuzenle.resx">
+      <DependentUpon>FrmPersonelDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmYoneticiDuzenle.resx">
       <DependentUpon>FrmYoneticiDuzenle.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +262,17 @@
     </None>
     <None Include="YurtOtomasyonuDataSet1.xss">
       <DependentUpon>YurtOtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="YurtOtomasyonuDataSet10.xsc">
+      <DependentUpon>YurtOtomasyonuDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="YurtOtomasyonuDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtOtomasyonuDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtOtomasyonuDataSet10.xss">
+      <DependentUpon>YurtOtomasyonuDataSet10.xsd</DependentUpon>
     </None>
     <None Include="YurtOtomasyonuDataSet2.xsc">
       <DependentUpon>YurtOtomasyonuDataSet2.xsd</DependentUpon>

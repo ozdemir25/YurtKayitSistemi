@@ -45,12 +45,12 @@ namespace YurtKayitSistemi
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.adminBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtOtomasyonuDataSet9 = new YurtKayitSistemi.YurtOtomasyonuDataSet9();
-            this.adminTableAdapter1 = new YurtKayitSistemi.YurtOtomasyonuDataSet9TableAdapters.AdminTableAdapter();
             this.yoneticiidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yoneticiAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yoneticiSifreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adminBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtOtomasyonuDataSet9 = new YurtKayitSistemi.YurtOtomasyonuDataSet9();
+            this.adminTableAdapter1 = new YurtKayitSistemi.YurtOtomasyonuDataSet9TableAdapters.AdminTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -187,20 +187,7 @@ namespace YurtKayitSistemi
             this.dataGridView1.Size = new System.Drawing.Size(507, 418);
             this.dataGridView1.TabIndex = 37;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // adminBindingSource1
-            // 
-            this.adminBindingSource1.DataMember = "Admin";
-            this.adminBindingSource1.DataSource = this.yurtOtomasyonuDataSet9;
-            // 
-            // yurtOtomasyonuDataSet9
-            // 
-            this.yurtOtomasyonuDataSet9.DataSetName = "YurtOtomasyonuDataSet9";
-            this.yurtOtomasyonuDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // adminTableAdapter1
-            // 
-            this.adminTableAdapter1.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // yoneticiidDataGridViewTextBoxColumn
             // 
@@ -226,6 +213,20 @@ namespace YurtKayitSistemi
             this.yoneticiSifreDataGridViewTextBoxColumn.HeaderText = "YoneticiSifre";
             this.yoneticiSifreDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.yoneticiSifreDataGridViewTextBoxColumn.Name = "yoneticiSifreDataGridViewTextBoxColumn";
+            // 
+            // adminBindingSource1
+            // 
+            this.adminBindingSource1.DataMember = "Admin";
+            this.adminBindingSource1.DataSource = this.yurtOtomasyonuDataSet9;
+            // 
+            // yurtOtomasyonuDataSet9
+            // 
+            this.yurtOtomasyonuDataSet9.DataSetName = "YurtOtomasyonuDataSet9";
+            this.yurtOtomasyonuDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // adminTableAdapter1
+            // 
+            this.adminTableAdapter1.ClearBeforeFill = true;
             // 
             // FrmYoneticiDuzenle
             // 

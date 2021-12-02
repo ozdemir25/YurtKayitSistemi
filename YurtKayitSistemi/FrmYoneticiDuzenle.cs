@@ -96,5 +96,10 @@ namespace YurtKayitSistemi
             txtKullaniciAd.Text = KullaniciAd;
             txtKullaniciSifre.Text = KullaniciSifre;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
