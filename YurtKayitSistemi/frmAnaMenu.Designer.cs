@@ -53,11 +53,6 @@ namespace YurtKayitSistemi
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.odaIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaKapasiteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaAktifDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaDurumDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.odalarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtOtomasyonuDataSet1 = new YurtKayitSistemi.YurtOtomasyonuDataSet1();
             this.odalarTableAdapter = new YurtKayitSistemi.YurtOtomasyonuDataSet1TableAdapters.OdalarTableAdapter();
@@ -242,64 +237,13 @@ namespace YurtKayitSistemi
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.odaIdDataGridViewTextBoxColumn,
-            this.odaNoDataGridViewTextBoxColumn,
-            this.odaKapasiteDataGridViewTextBoxColumn,
-            this.odaAktifDataGridViewTextBoxColumn,
-            this.odaDurumDataGridViewCheckBoxColumn});
-            this.dataGridView1.DataSource = this.odalarBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 108);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 97);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1070, 395);
             this.dataGridView1.TabIndex = 28;
-            // 
-            // odaIdDataGridViewTextBoxColumn
-            // 
-            this.odaIdDataGridViewTextBoxColumn.DataPropertyName = "OdaId";
-            this.odaIdDataGridViewTextBoxColumn.HeaderText = "OdaId";
-            this.odaIdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.odaIdDataGridViewTextBoxColumn.Name = "odaIdDataGridViewTextBoxColumn";
-            this.odaIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.odaIdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // odaNoDataGridViewTextBoxColumn
-            // 
-            this.odaNoDataGridViewTextBoxColumn.DataPropertyName = "OdaNo";
-            this.odaNoDataGridViewTextBoxColumn.HeaderText = "OdaNo";
-            this.odaNoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.odaNoDataGridViewTextBoxColumn.Name = "odaNoDataGridViewTextBoxColumn";
-            this.odaNoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // odaKapasiteDataGridViewTextBoxColumn
-            // 
-            this.odaKapasiteDataGridViewTextBoxColumn.DataPropertyName = "OdaKapasite";
-            this.odaKapasiteDataGridViewTextBoxColumn.HeaderText = "OdaKapasite";
-            this.odaKapasiteDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.odaKapasiteDataGridViewTextBoxColumn.Name = "odaKapasiteDataGridViewTextBoxColumn";
-            this.odaKapasiteDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // odaAktifDataGridViewTextBoxColumn
-            // 
-            this.odaAktifDataGridViewTextBoxColumn.DataPropertyName = "OdaAktif";
-            this.odaAktifDataGridViewTextBoxColumn.HeaderText = "OdaAktif";
-            this.odaAktifDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.odaAktifDataGridViewTextBoxColumn.Name = "odaAktifDataGridViewTextBoxColumn";
-            this.odaAktifDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // odaDurumDataGridViewCheckBoxColumn
-            // 
-            this.odaDurumDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.odaDurumDataGridViewCheckBoxColumn.DataPropertyName = "OdaDurum";
-            this.odaDurumDataGridViewCheckBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.odaDurumDataGridViewCheckBoxColumn.HeaderText = "OdaDurum";
-            this.odaDurumDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.odaDurumDataGridViewCheckBoxColumn.Name = "odaDurumDataGridViewCheckBoxColumn";
-            this.odaDurumDataGridViewCheckBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // odalarBindingSource
             // 
@@ -398,11 +342,6 @@ namespace YurtKayitSistemi
         private YurtOtomasyonuDataSet1 yurtOtomasyonuDataSet1;
         private System.Windows.Forms.BindingSource odalarBindingSource;
         private YurtOtomasyonuDataSet1TableAdapters.OdalarTableAdapter odalarTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odaIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odaNoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odaKapasiteDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odaAktifDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn odaDurumDataGridViewCheckBoxColumn;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblSaat;
         private System.Windows.Forms.Label lblTarih;

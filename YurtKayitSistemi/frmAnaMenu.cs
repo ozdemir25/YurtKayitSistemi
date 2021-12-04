@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace YurtKayitSistemi
 {
@@ -19,14 +20,33 @@ namespace YurtKayitSistemi
 
         private void ödemeToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //-----------------
+        }
+
+        // Odalar tablosunu DataGridView'e Çekiyoruz.
+        SqlConnection con;
+        SqlDataAdapter da;
+        DataSet ds;
+        public void gridDoldur()
+        {
+            con = new SqlConnection("Data Source=DESKTOP-0UK1IES;Initial Catalog=YurtOtomasyonu;Integrated Security=True");
+            da = new SqlDataAdapter("Select * From Odalar", con);
+            ds = new DataSet();
+            con.Open();
+            da.Fill(ds, "Odalar");
+            dataGridView1.DataSource = ds.Tables["Odalar"];
+            con.Close();
         }
 
         private void frmAnaMenu_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet1.Odalar' table. You can move, or remove it, as needed.
             this.odalarTableAdapter.Fill(this.yurtOtomasyonuDataSet1.Odalar);
-
             timer1.Start();
+
+            gridDoldur();
+            dataGridView1.Columns[0].Width = 60;
+            dataGridView1.Columns[4].Width = 372;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -66,8 +86,7 @@ namespace YurtKayitSistemi
 
         private void öğrenciDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /*FrmOgrDuzenle frmDuzenle = new FrmOgrDuzenle();
-            frmDuzenle.Show();*/
+            //-----------------
         }
 
         private void gİDEREKLEToolStripMenuItem_Click(object sender, EventArgs e)
@@ -90,7 +109,7 @@ namespace YurtKayitSistemi
 
         private void bölümDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //-----------
+            //-----------------
         }
 
         private void gelirİstatistikleriToolStripMenuItem_Click(object sender, EventArgs e)

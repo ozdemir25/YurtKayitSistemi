@@ -179,6 +179,8 @@ namespace YurtKayitSistemi
             // btnOdemeAl
             // 
             this.btnOdemeAl.BackColor = System.Drawing.Color.Lime;
+            this.btnOdemeAl.FlatAppearance.BorderSize = 0;
+            this.btnOdemeAl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOdemeAl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOdemeAl.Location = new System.Drawing.Point(1020, 457);
             this.btnOdemeAl.Name = "btnOdemeAl";

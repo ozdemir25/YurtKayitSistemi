@@ -58,6 +58,7 @@ namespace YurtKayitSistemi
             this.label14 = new System.Windows.Forms.Label();
             this.txtOgrid = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.btnSil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -114,8 +115,10 @@ namespace YurtKayitSistemi
             // btnKaydet
             // 
             this.btnKaydet.BackColor = System.Drawing.Color.Lime;
+            this.btnKaydet.FlatAppearance.BorderSize = 0;
+            this.btnKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKaydet.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet.Location = new System.Drawing.Point(828, 486);
+            this.btnKaydet.Location = new System.Drawing.Point(671, 489);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(158, 55);
             this.btnKaydet.TabIndex = 50;
@@ -343,12 +346,28 @@ namespace YurtKayitSistemi
             this.label15.TabIndex = 56;
             this.label15.Text = "Öğrenci id :";
             // 
+            // btnSil
+            // 
+            this.btnSil.BackColor = System.Drawing.Color.Red;
+            this.btnSil.FlatAppearance.BorderSize = 0;
+            this.btnSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSil.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSil.ForeColor = System.Drawing.Color.White;
+            this.btnSil.Location = new System.Drawing.Point(905, 489);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(158, 55);
+            this.btnSil.TabIndex = 58;
+            this.btnSil.Text = "Sil";
+            this.btnSil.UseVisualStyleBackColor = false;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            // 
             // FrmOgrDuzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1186, 772);
+            this.Controls.Add(this.btnSil);
             this.Controls.Add(this.txtOgrid);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label12);
@@ -420,5 +439,6 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtOgrid;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnSil;
     }
 }

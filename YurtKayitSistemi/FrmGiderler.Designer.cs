@@ -209,6 +209,8 @@ namespace YurtKayitSistemi
             // btnKaydet
             // 
             this.btnKaydet.BackColor = System.Drawing.Color.Lime;
+            this.btnKaydet.FlatAppearance.BorderSize = 0;
+            this.btnKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKaydet.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKaydet.Location = new System.Drawing.Point(618, 447);
             this.btnKaydet.Name = "btnKaydet";
@@ -230,6 +232,8 @@ namespace YurtKayitSistemi
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(857, 436);
             this.button1.Name = "button1";

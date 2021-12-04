@@ -72,6 +72,8 @@ namespace YurtKayitSistemi
             // btnGirisYap
             // 
             this.btnGirisYap.BackColor = System.Drawing.Color.Lime;
+            this.btnGirisYap.FlatAppearance.BorderSize = 0;
+            this.btnGirisYap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGirisYap.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGirisYap.Location = new System.Drawing.Point(107, 535);
             this.btnGirisYap.Name = "btnGirisYap";

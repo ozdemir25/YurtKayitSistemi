@@ -264,6 +264,8 @@ namespace YurtKayitSistemi
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(901, 571);
             this.button1.Name = "button1";
@@ -360,6 +362,7 @@ namespace YurtKayitSistemi
             this.Name = "FrmOgrKayit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Öğrenci Kayıt ";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmOgrKayit_FormClosed);
             this.Load += new System.EventHandler(this.FrmOgrKayit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

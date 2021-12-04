@@ -17,11 +17,29 @@ namespace YurtKayitSistemi
         {
             InitializeComponent();
         }
-        public string id, ad, soyad, Tc, ogrTelefon, ogrDogum, ogrBolum, ogrMail;
-        public string ogrOdaNo, ogrVeliAdSoyad, ogrVeliTelefonNo, Adres;
 
         sqlBaglantim bgl = new sqlBaglantim();
 
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlCommand komut3 = new SqlCommand("Delete From Ogrenci where Ogrid=@s1 ", bgl.baglanti());
+                komut3.Parameters.AddWithValue("@s1", txtOgrid.Text);
+                komut3.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Kayıt Silindi.");
+                FrmOgrListele frmOgrListele = (FrmOgrListele)Application.OpenForms["FrmOgrListele"];
+                frmOgrListele.gridDoldur();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("HATA Kayıt Silenemedi. !!!" + ex.Message);
+            }
+        }
+
+        public string ogrOdaNo, ogrVeliAdSoyad, ogrVeliTelefonNo, Adres;
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             try
@@ -51,8 +69,9 @@ namespace YurtKayitSistemi
 
         private void label2_Click(object sender, EventArgs e)
         {
+            //--------------
         }
-
+        public string id, ad, soyad, Tc, ogrTelefon, ogrDogum, ogrBolum, ogrMail;
         private void FrmOgrDuzenle_Load(object sender, EventArgs e)
         {
             // Verileri  Düzenleme Formuna atma.
@@ -72,10 +91,11 @@ namespace YurtKayitSistemi
 
             //----------------------------------------------
             label2.Visible = false;
+            //----------------------------------------------
 
             //Bölümleri listeleme  komutları.
-            SqlCommand komut = new SqlCommand("Select BolumAd From Bolumler", bgl.baglanti());
-            SqlDataReader oku = komut.ExecuteReader();
+            SqlCommand komut1 = new SqlCommand("Select BolumAd From Bolumler", bgl.baglanti());
+            SqlDataReader oku = komut1.ExecuteReader();
             while (oku.Read())
             {
                 cmbOgrBolum.Items.Add(oku[0].ToString());
@@ -94,6 +114,7 @@ namespace YurtKayitSistemi
 
         private void txtOgrid_TextChanged(object sender, EventArgs e)
         {
+            //--------------
         }
     }
 }
