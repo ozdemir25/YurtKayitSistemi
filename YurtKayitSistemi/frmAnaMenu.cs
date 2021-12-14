@@ -27,7 +27,7 @@ namespace YurtKayitSistemi
         SqlConnection con;
         SqlDataAdapter da;
         DataSet ds;
-        public void gridDoldur()
+        public void AnaMenuGridDoldur()
         {
             con = new SqlConnection("Data Source=DESKTOP-0UK1IES;Initial Catalog=YurtOtomasyonu;Integrated Security=True");
             da = new SqlDataAdapter("Select * From Odalar", con);
@@ -44,7 +44,7 @@ namespace YurtKayitSistemi
             this.odalarTableAdapter.Fill(this.yurtOtomasyonuDataSet1.Odalar);
             timer1.Start();
 
-            gridDoldur();
+            AnaMenuGridDoldur();
             dataGridView1.Columns[0].Width = 60;
             dataGridView1.Columns[4].Width = 372;
         }
@@ -116,6 +116,17 @@ namespace YurtKayitSistemi
         {
             FrmGelirIstatistik frmGelirIstatistik = new FrmGelirIstatistik();
             frmGelirIstatistik.Show();
+        }
+
+        private void personelDüzenlemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPersonelDuzenle frmPersonelDuzenle = new FrmPersonelDuzenle();
+            frmPersonelDuzenle.Show();
+        }
+
+        private void hakkımızdaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

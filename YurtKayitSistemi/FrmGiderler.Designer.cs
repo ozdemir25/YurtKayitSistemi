@@ -80,7 +80,7 @@ namespace YurtKayitSistemi
             this.txtElektrik.Location = new System.Drawing.Point(286, 218);
             this.txtElektrik.Name = "txtElektrik";
             this.txtElektrik.Size = new System.Drawing.Size(282, 30);
-            this.txtElektrik.TabIndex = 30;
+            this.txtElektrik.TabIndex = 1;
             // 
             // label1
             // 
@@ -99,7 +99,7 @@ namespace YurtKayitSistemi
             this.txtSu.Location = new System.Drawing.Point(692, 218);
             this.txtSu.Name = "txtSu";
             this.txtSu.Size = new System.Drawing.Size(282, 30);
-            this.txtSu.TabIndex = 32;
+            this.txtSu.TabIndex = 4;
             // 
             // label2
             // 
@@ -118,7 +118,7 @@ namespace YurtKayitSistemi
             this.txtDogalgaz.Location = new System.Drawing.Point(286, 271);
             this.txtDogalgaz.Name = "txtDogalgaz";
             this.txtDogalgaz.Size = new System.Drawing.Size(282, 30);
-            this.txtDogalgaz.TabIndex = 34;
+            this.txtDogalgaz.TabIndex = 2;
             // 
             // label3
             // 
@@ -137,7 +137,7 @@ namespace YurtKayitSistemi
             this.txtInternet.Location = new System.Drawing.Point(692, 271);
             this.txtInternet.Name = "txtInternet";
             this.txtInternet.Size = new System.Drawing.Size(282, 30);
-            this.txtInternet.TabIndex = 36;
+            this.txtInternet.TabIndex = 5;
             // 
             // label4
             // 
@@ -156,7 +156,7 @@ namespace YurtKayitSistemi
             this.txtGıda.Location = new System.Drawing.Point(286, 323);
             this.txtGıda.Name = "txtGıda";
             this.txtGıda.Size = new System.Drawing.Size(282, 30);
-            this.txtGıda.TabIndex = 38;
+            this.txtGıda.TabIndex = 3;
             // 
             // label5
             // 
@@ -175,7 +175,7 @@ namespace YurtKayitSistemi
             this.txtMaaslar.Location = new System.Drawing.Point(692, 323);
             this.txtMaaslar.Name = "txtMaaslar";
             this.txtMaaslar.Size = new System.Drawing.Size(282, 30);
-            this.txtMaaslar.TabIndex = 40;
+            this.txtMaaslar.TabIndex = 6;
             // 
             // label6
             // 
@@ -194,7 +194,7 @@ namespace YurtKayitSistemi
             this.txtDiger.Location = new System.Drawing.Point(286, 375);
             this.txtDiger.Name = "txtDiger";
             this.txtDiger.Size = new System.Drawing.Size(282, 30);
-            this.txtDiger.TabIndex = 42;
+            this.txtDiger.TabIndex = 7;
             // 
             // label7
             // 
@@ -215,7 +215,7 @@ namespace YurtKayitSistemi
             this.btnKaydet.Location = new System.Drawing.Point(618, 447);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(158, 55);
-            this.btnKaydet.TabIndex = 43;
+            this.btnKaydet.TabIndex = 8;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = false;
             this.btnKaydet.Click += new System.EventHandler(this.button1_Click);
@@ -238,7 +238,7 @@ namespace YurtKayitSistemi
             this.button1.Location = new System.Drawing.Point(857, 436);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(226, 77);
-            this.button1.TabIndex = 45;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Giderleri Görüntüle ve Düzenleme";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);

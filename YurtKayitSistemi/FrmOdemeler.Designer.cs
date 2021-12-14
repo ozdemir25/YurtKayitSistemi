@@ -66,7 +66,7 @@ namespace YurtKayitSistemi
             this.txtOdenenTutar.Location = new System.Drawing.Point(958, 295);
             this.txtOdenenTutar.Name = "txtOdenenTutar";
             this.txtOdenenTutar.Size = new System.Drawing.Size(282, 30);
-            this.txtOdenenTutar.TabIndex = 11;
+            this.txtOdenenTutar.TabIndex = 4;
             // 
             // label2
             // 
@@ -164,7 +164,7 @@ namespace YurtKayitSistemi
             this.txtKalanBorc.Location = new System.Drawing.Point(958, 341);
             this.txtKalanBorc.Name = "txtKalanBorc";
             this.txtKalanBorc.Size = new System.Drawing.Size(282, 30);
-            this.txtKalanBorc.TabIndex = 30;
+            this.txtKalanBorc.TabIndex = 5;
             // 
             // label3
             // 
@@ -185,7 +185,7 @@ namespace YurtKayitSistemi
             this.btnOdemeAl.Location = new System.Drawing.Point(1020, 457);
             this.btnOdemeAl.Name = "btnOdemeAl";
             this.btnOdemeAl.Size = new System.Drawing.Size(158, 55);
-            this.btnOdemeAl.TabIndex = 31;
+            this.btnOdemeAl.TabIndex = 7;
             this.btnOdemeAl.Text = "Ödeme Al";
             this.btnOdemeAl.UseVisualStyleBackColor = false;
             this.btnOdemeAl.Click += new System.EventHandler(this.btnOdemeAl_Click);
@@ -201,7 +201,7 @@ namespace YurtKayitSistemi
             this.txtOgrenciid.Location = new System.Drawing.Point(958, 152);
             this.txtOgrenciid.Name = "txtOgrenciid";
             this.txtOgrenciid.Size = new System.Drawing.Size(282, 30);
-            this.txtOgrenciid.TabIndex = 32;
+            this.txtOgrenciid.TabIndex = 1;
             // 
             // txtAd
             // 
@@ -210,7 +210,7 @@ namespace YurtKayitSistemi
             this.txtAd.Location = new System.Drawing.Point(958, 201);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(282, 30);
-            this.txtAd.TabIndex = 34;
+            this.txtAd.TabIndex = 2;
             // 
             // label4
             // 
@@ -229,7 +229,7 @@ namespace YurtKayitSistemi
             this.txtSoyad.Location = new System.Drawing.Point(958, 248);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(282, 30);
-            this.txtSoyad.TabIndex = 36;
+            this.txtSoyad.TabIndex = 3;
             // 
             // label5
             // 
@@ -271,7 +271,7 @@ namespace YurtKayitSistemi
             this.cmbOdemeAy.Location = new System.Drawing.Point(958, 389);
             this.cmbOdemeAy.Name = "cmbOdemeAy";
             this.cmbOdemeAy.Size = new System.Drawing.Size(282, 32);
-            this.cmbOdemeAy.TabIndex = 38;
+            this.cmbOdemeAy.TabIndex = 6;
             // 
             // FrmOdemeler
             // 

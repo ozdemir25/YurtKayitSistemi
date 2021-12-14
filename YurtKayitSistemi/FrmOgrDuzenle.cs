@@ -23,6 +23,7 @@ namespace YurtKayitSistemi
 
         private void btnSil_Click(object sender, EventArgs e)
         {
+            //Öğrenciyi Silme İşlemi yapılır.
             try
             {
                 SqlCommand komut3 = new SqlCommand("Delete From Ogrenci where Ogrid=@s1 ", bgl.baglanti());
@@ -37,6 +38,16 @@ namespace YurtKayitSistemi
             {
                 MessageBox.Show("HATA Kayıt Silenemedi. !!!" + ex.Message);
             }
+
+
+            //Öğrenci silindikten sonra kaldığı odada ki kişi sayısını azaltma işlmei yapar.
+            SqlCommand komutOdaAzalt = new SqlCommand("Update odalar set OdaAktif=OdaAktif-1 Where OdaNo=@OdaNo", bgl.baglanti());
+            komutOdaAzalt.Parameters.AddWithValue("@OdaNo", cmbOdaNo.Text);
+            komutOdaAzalt.ExecuteNonQuery();
+            FrmAnaMenu frmAnaMenu = (FrmAnaMenu)Application.OpenForms["FrmAnaMenu"];
+            frmAnaMenu.AnaMenuGridDoldur();
+            bgl.baglanti().Close();
+
         }
 
         public string ogrOdaNo, ogrVeliAdSoyad, ogrVeliTelefonNo, Adres;
@@ -60,6 +71,8 @@ namespace YurtKayitSistemi
                 komut.ExecuteNonQuery();
                 bgl.baglanti().Close();
                 MessageBox.Show("Kayıt Güncelledi.");
+                FrmOgrListele frmOgrListele = (FrmOgrListele)Application.OpenForms["FrmOgrListele"];
+                frmOgrListele.gridDoldur();
             }
             catch (Exception hata)
             {

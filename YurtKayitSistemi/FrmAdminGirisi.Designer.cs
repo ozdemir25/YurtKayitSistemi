@@ -78,7 +78,7 @@ namespace YurtKayitSistemi
             this.btnGirisYap.Location = new System.Drawing.Point(107, 535);
             this.btnGirisYap.Name = "btnGirisYap";
             this.btnGirisYap.Size = new System.Drawing.Size(281, 52);
-            this.btnGirisYap.TabIndex = 11;
+            this.btnGirisYap.TabIndex = 3;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = false;
             this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
@@ -90,7 +90,7 @@ namespace YurtKayitSistemi
             this.txtKullaniciAdi.Location = new System.Drawing.Point(106, 394);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(282, 30);
-            this.txtKullaniciAdi.TabIndex = 12;
+            this.txtKullaniciAdi.TabIndex = 1;
             this.txtKullaniciAdi.Text = "Muhammet";
             // 
             // txtSifre
@@ -100,7 +100,7 @@ namespace YurtKayitSistemi
             this.txtSifre.Location = new System.Drawing.Point(107, 473);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(282, 30);
-            this.txtSifre.TabIndex = 13;
+            this.txtSifre.TabIndex = 2;
             this.txtSifre.Text = "999";
             // 
             // FrmAdminGirisi

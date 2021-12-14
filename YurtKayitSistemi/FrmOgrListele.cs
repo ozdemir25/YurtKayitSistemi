@@ -44,12 +44,14 @@ namespace YurtKayitSistemi
             dataGridView1.Columns[9].Width = 110;
             dataGridView1.Columns[11].Width = 222;
 
-            MessageBox.Show("Öğrenciyi GÜNCELLEMEK ve SİLMEK için Öğrencinin üzerine tek tıklamanız yeterlidir.");
+            MessageBox.Show("Öğrenciyi GÜNCELLEMEK veya SİLMEK için Öğrencinin üzerine tek tıklamanız yeterlidir.");
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            //----------------
         }
+
         int secilen;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {

@@ -38,6 +38,18 @@ namespace YurtKayitSistemi
                 cmbAySecim.Items.Add(oku2[0].ToString());
             }
             bgl.baglanti().Close();
+
+
+            //Grafik oluşturma (Veritabından çekme işlemi)
+            SqlCommand komut3 = new SqlCommand("Select OdemeAy,sum(OdemeMiktar) From kasa group by OdemeAy", bgl.baglanti());
+            SqlDataReader oku3 = komut3.ExecuteReader();
+            while (oku3.Read())
+            {
+                this.chart1.Series["Aylık"].Points.AddXY(oku3[0], oku3[1]);
+            }
+            bgl.baglanti().Close();
+
+
         }
 
         private void cmbAySecim_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,6 +62,11 @@ namespace YurtKayitSistemi
                 lblSecilenAyParası.Text = oku3[0].ToString() + " TL";
             }
             bgl.baglanti().Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -97,7 +97,7 @@ namespace YurtKayitSistemi
             komutOda.Parameters.AddWithValue("@oda1", cmbOdaNo.Text);
             komutOda.ExecuteNonQuery();
             FrmAnaMenu frmAnaMenu = (FrmAnaMenu)Application.OpenForms["FrmAnaMenu"];
-            frmAnaMenu.gridDoldur();
+            frmAnaMenu.AnaMenuGridDoldur();
             bgl.baglanti().Close();
         }
 

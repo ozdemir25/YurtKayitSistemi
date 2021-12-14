@@ -86,7 +86,7 @@ namespace YurtKayitSistemi
             this.txtOgrSoyadi.Location = new System.Drawing.Point(777, 163);
             this.txtOgrSoyadi.Name = "txtOgrSoyadi";
             this.txtOgrSoyadi.Size = new System.Drawing.Size(282, 30);
-            this.txtOgrSoyadi.TabIndex = 3;
+            this.txtOgrSoyadi.TabIndex = 2;
             // 
             // label2
             // 
@@ -115,7 +115,7 @@ namespace YurtKayitSistemi
             this.mskOgrTC.Mask = "00000000000";
             this.mskOgrTC.Name = "mskOgrTC";
             this.mskOgrTC.Size = new System.Drawing.Size(282, 30);
-            this.mskOgrTC.TabIndex = 5;
+            this.mskOgrTC.TabIndex = 3;
             this.mskOgrTC.ValidatingType = typeof(int);
             // 
             // mskOgrTelefon
@@ -125,7 +125,7 @@ namespace YurtKayitSistemi
             this.mskOgrTelefon.Mask = "(999) 000-0000";
             this.mskOgrTelefon.Name = "mskOgrTelefon";
             this.mskOgrTelefon.Size = new System.Drawing.Size(282, 30);
-            this.mskOgrTelefon.TabIndex = 7;
+            this.mskOgrTelefon.TabIndex = 4;
             // 
             // label4
             // 
@@ -144,7 +144,7 @@ namespace YurtKayitSistemi
             this.mskOgrDogumTarihi.Mask = "00/00/0000";
             this.mskOgrDogumTarihi.Name = "mskOgrDogumTarihi";
             this.mskOgrDogumTarihi.Size = new System.Drawing.Size(282, 30);
-            this.mskOgrDogumTarihi.TabIndex = 9;
+            this.mskOgrDogumTarihi.TabIndex = 5;
             this.mskOgrDogumTarihi.ValidatingType = typeof(System.DateTime);
             // 
             // label5
@@ -174,7 +174,7 @@ namespace YurtKayitSistemi
             this.cmbOgrBolum.Location = new System.Drawing.Point(777, 265);
             this.cmbOgrBolum.Name = "cmbOgrBolum";
             this.cmbOgrBolum.Size = new System.Drawing.Size(282, 32);
-            this.cmbOgrBolum.TabIndex = 11;
+            this.cmbOgrBolum.TabIndex = 6;
             // 
             // txtOgrMail
             // 
@@ -183,7 +183,7 @@ namespace YurtKayitSistemi
             this.txtOgrMail.Location = new System.Drawing.Point(273, 314);
             this.txtOgrMail.Name = "txtOgrMail";
             this.txtOgrMail.Size = new System.Drawing.Size(282, 30);
-            this.txtOgrMail.TabIndex = 13;
+            this.txtOgrMail.TabIndex = 7;
             // 
             // label7
             // 
@@ -212,7 +212,7 @@ namespace YurtKayitSistemi
             this.txtOgrVeliAdiSoyadi.Location = new System.Drawing.Point(273, 362);
             this.txtOgrVeliAdiSoyadi.Name = "txtOgrVeliAdiSoyadi";
             this.txtOgrVeliAdiSoyadi.Size = new System.Drawing.Size(282, 30);
-            this.txtOgrVeliAdiSoyadi.TabIndex = 17;
+            this.txtOgrVeliAdiSoyadi.TabIndex = 9;
             // 
             // label9
             // 
@@ -231,7 +231,7 @@ namespace YurtKayitSistemi
             this.mskOgrVeliTelefonNo.Mask = "(999) 000-0000";
             this.mskOgrVeliTelefonNo.Name = "mskOgrVeliTelefonNo";
             this.mskOgrVeliTelefonNo.Size = new System.Drawing.Size(282, 30);
-            this.mskOgrVeliTelefonNo.TabIndex = 19;
+            this.mskOgrVeliTelefonNo.TabIndex = 10;
             // 
             // label10
             // 
@@ -258,7 +258,7 @@ namespace YurtKayitSistemi
             this.richTextBox1.Location = new System.Drawing.Point(777, 417);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(282, 133);
-            this.richTextBox1.TabIndex = 21;
+            this.richTextBox1.TabIndex = 11;
             this.richTextBox1.Text = "";
             // 
             // button1
@@ -270,7 +270,7 @@ namespace YurtKayitSistemi
             this.button1.Location = new System.Drawing.Point(901, 571);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 55);
-            this.button1.TabIndex = 22;
+            this.button1.TabIndex = 12;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -282,7 +282,7 @@ namespace YurtKayitSistemi
             this.cmbOdaNo.Location = new System.Drawing.Point(777, 314);
             this.cmbOdaNo.Name = "cmbOdaNo";
             this.cmbOdaNo.Size = new System.Drawing.Size(282, 32);
-            this.cmbOdaNo.TabIndex = 23;
+            this.cmbOdaNo.TabIndex = 8;
             // 
             // pictureBox1
             // 

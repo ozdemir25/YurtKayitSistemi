@@ -50,11 +50,12 @@ namespace YurtKayitSistemi
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.pictureBox2.Location = new System.Drawing.Point(-10, 553);
+            this.pictureBox2.Location = new System.Drawing.Point(-8, 628);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1102, 142);
+            this.pictureBox2.Size = new System.Drawing.Size(1143, 142);
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -131,13 +132,13 @@ namespace YurtKayitSistemi
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(31, 240);
+            this.chart1.Location = new System.Drawing.Point(12, 292);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Aylık";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(601, 307);
+            this.chart1.Size = new System.Drawing.Size(706, 330);
             this.chart1.TabIndex = 35;
             this.chart1.Text = "chart1";
             // 
@@ -146,7 +147,7 @@ namespace YurtKayitSistemi
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1091, 694);
+            this.ClientSize = new System.Drawing.Size(1135, 769);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.lblSecilenAyParası);
             this.Controls.Add(this.label5);
