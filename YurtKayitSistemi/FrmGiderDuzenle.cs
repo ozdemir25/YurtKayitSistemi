@@ -19,13 +19,26 @@ namespace YurtKayitSistemi
         }
         sqlBaglantim bgl =new sqlBaglantim();
 
+        //DatagridViev verileri getrme işlemi.
+        private void bolumlerGetir()
+        {
+            String kayit = "Select * From Giderler";
+            SqlCommand kmtGetir = new SqlCommand(kayit, bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter(kmtGetir);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            bgl.baglanti().Close();
+        }      
+
         private void FrmGiderDuzenle_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet4.Giderler' table. You can move, or remove it, as needed.
             this.giderlerTableAdapter.Fill(this.yurtOtomasyonuDataSet4.Giderler);
+            bolumlerGetir();
             dataGridView1.Columns[0].Width = 60;
-            dataGridView1.Columns[1].Width = 100;
-            dataGridView1.Columns[2].Width = 100;
+            //dataGridView1.Columns[1].Width = 80;
+            //dataGridView1.Columns[2].Width = 100;
         }
         
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -97,5 +110,46 @@ namespace YurtKayitSistemi
                 MessageBox.Show("HATA Kayıt silinemedi.", hata.Message);
             }
         }
+
+        /*Yazdırma İlemi Yapar.................................................................................................................................*/
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            int i, j, x, y;
+            y = 30;
+            for (j = 0; j <=dataGridView1.Rows.Count-2 ; j++)
+            {
+                x = 30;
+                for (i = 0; i <= 7; i++) 
+                {
+                    e.Graphics.DrawString(dataGridView1.Rows[j].Cells[i].Value.ToString(), new Font("Times New Roman", 10), Brushes.Black, x, y);
+                    x = x + 80;
+                }
+                y = y + 30;
+            }
+            
+            /*
+            Bitmap bmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
+            dataGridView1.DrawToBitmap(bmap, new Rectangle(0, 80, dataGridView1.Width, dataGridView1.Height));
+            e.Graphics.DrawImage(bmap, 0, 0);
+            */
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            /*
+             printDocument1.Print();
+             */
+
+            pageSetupDialog1.Document = printDocument1;
+            pageSetupDialog1.PageSettings = printDocument1.DefaultPageSettings;
+            if (pageSetupDialog1.ShowDialog() == DialogResult.OK) 
+            {
+                printDocument1.DefaultPageSettings = pageSetupDialog1.PageSettings;
+            }
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
+        }
+        /*......................................................................................................................................................*/
+
     }
 }

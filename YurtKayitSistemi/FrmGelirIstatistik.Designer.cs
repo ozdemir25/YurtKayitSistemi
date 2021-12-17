@@ -62,7 +62,7 @@ namespace YurtKayitSistemi
             this.pictureBox1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox1.Location = new System.Drawing.Point(-8, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1100, 142);
+            this.pictureBox1.Size = new System.Drawing.Size(1143, 142);
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 

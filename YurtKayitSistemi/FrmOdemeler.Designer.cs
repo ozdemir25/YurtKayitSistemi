@@ -53,10 +53,16 @@ namespace YurtKayitSistemi
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cmbOdemeAy = new System.Windows.Forms.ComboBox();
+            this.btnYazdır = new System.Windows.Forms.Button();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.borclarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtOdenenTutar
@@ -182,7 +188,7 @@ namespace YurtKayitSistemi
             this.btnOdemeAl.FlatAppearance.BorderSize = 0;
             this.btnOdemeAl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOdemeAl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdemeAl.Location = new System.Drawing.Point(1020, 457);
+            this.btnOdemeAl.Location = new System.Drawing.Point(1022, 450);
             this.btnOdemeAl.Name = "btnOdemeAl";
             this.btnOdemeAl.Size = new System.Drawing.Size(158, 55);
             this.btnOdemeAl.TabIndex = 7;
@@ -273,12 +279,54 @@ namespace YurtKayitSistemi
             this.cmbOdemeAy.Size = new System.Drawing.Size(282, 32);
             this.cmbOdemeAy.TabIndex = 6;
             // 
+            // btnYazdır
+            // 
+            this.btnYazdır.BackColor = System.Drawing.Color.Lime;
+            this.btnYazdır.FlatAppearance.BorderSize = 0;
+            this.btnYazdır.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYazdır.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYazdır.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnYazdır.Location = new System.Drawing.Point(1298, 624);
+            this.btnYazdır.Name = "btnYazdır";
+            this.btnYazdır.Size = new System.Drawing.Size(10, 10);
+            this.btnYazdır.TabIndex = 38;
+            this.btnYazdır.Text = "Yazdır";
+            this.btnYazdır.UseVisualStyleBackColor = false;
+            this.btnYazdır.Click += new System.EventHandler(this.btnYazdır_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1194, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 84);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // FrmOdemeler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1320, 792);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnYazdır);
             this.Controls.Add(this.cmbOdemeAy);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSoyad);
@@ -303,6 +351,7 @@ namespace YurtKayitSistemi
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.borclarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,5 +381,10 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbOdemeAy;
+        private System.Windows.Forms.Button btnYazdır;
+        private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

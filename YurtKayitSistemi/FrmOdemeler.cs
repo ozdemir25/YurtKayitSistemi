@@ -25,7 +25,7 @@ namespace YurtKayitSistemi
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet3.Borclar' table. You can move, or remove it, as needed.
             this.borclarTableAdapter.Fill(this.yurtOtomasyonuDataSet3.Borclar);
             dataGridView1.Columns[0].Width = 80;
-
+            btnYazdır.Visible = false;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -42,7 +42,6 @@ namespace YurtKayitSistemi
             txtAd.Text = ad;
             txtSoyad.Text = soyad;
             txtKalanBorc.Text = kalan;
-
         }
 
         private void btnOdemeAl_Click(object sender, EventArgs e)
@@ -70,5 +69,39 @@ namespace YurtKayitSistemi
             bgl.baglanti().Close();
 
         }
+
+        private void btnYazdır_Click(object sender, EventArgs e)
+        {
+            /*-----------------------------*/
+        }
+        /*Yazdırma İlemi Yapar.................................................................................................................................*/
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            int i, j, x, y;
+            y = 30;
+            for (j = 0; j <=dataGridView1.Rows.Count-2; j++)
+            {
+                x = 30;
+                for (i = 0; i <= 3; i++) 
+                {
+                    e.Graphics.DrawString(dataGridView1.Rows[j].Cells[i].Value.ToString(), new Font("Times New Roman", 10), Brushes.Black, x, y);
+                    x = x + 80;
+                }
+                y = y + 30;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pageSetupDialog1.Document = printDocument1;
+            pageSetupDialog1.PageSettings = printDocument1.DefaultPageSettings;
+            if (pageSetupDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.DefaultPageSettings = pageSetupDialog1.PageSettings;
+            }
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
+        }
+        /*......................................................................................................................................................*/
     }
 }
