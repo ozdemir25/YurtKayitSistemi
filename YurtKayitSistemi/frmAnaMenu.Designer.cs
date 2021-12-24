@@ -45,6 +45,11 @@ namespace YurtKayitSistemi
             this.iSTATİSTİKLERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gelirİstatistikleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giderİstatistikleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.raporOluşturmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.öğrenciTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bölümlerTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.odalarTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yÖNETİCİToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yöneticiEkleSilGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelDüzenlemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,11 +63,6 @@ namespace YurtKayitSistemi
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblSaat = new System.Windows.Forms.Label();
             this.lblTarih = new System.Windows.Forms.Label();
-            this.raporOluşturmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.öğrenciTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bölümlerTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.odalarTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personelTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -84,7 +84,7 @@ namespace YurtKayitSistemi
             this.yÖNETİCİToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1172, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(1250, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -187,6 +187,41 @@ namespace YurtKayitSistemi
             this.giderİstatistikleriToolStripMenuItem.Size = new System.Drawing.Size(261, 28);
             this.giderİstatistikleriToolStripMenuItem.Text = "Gider İstatistikleri";
             // 
+            // raporOluşturmaToolStripMenuItem
+            // 
+            this.raporOluşturmaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.öğrenciTablosuRaporuToolStripMenuItem,
+            this.bölümlerTablosuRaporuToolStripMenuItem,
+            this.odalarTablosuRaporuToolStripMenuItem,
+            this.personelTablosuRaporuToolStripMenuItem});
+            this.raporOluşturmaToolStripMenuItem.Name = "raporOluşturmaToolStripMenuItem";
+            this.raporOluşturmaToolStripMenuItem.Size = new System.Drawing.Size(226, 28);
+            this.raporOluşturmaToolStripMenuItem.Text = "RAPOR OLUŞTURMA";
+            // 
+            // öğrenciTablosuRaporuToolStripMenuItem
+            // 
+            this.öğrenciTablosuRaporuToolStripMenuItem.Name = "öğrenciTablosuRaporuToolStripMenuItem";
+            this.öğrenciTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
+            this.öğrenciTablosuRaporuToolStripMenuItem.Text = "Öğrenci Tablosu Raporu";
+            // 
+            // bölümlerTablosuRaporuToolStripMenuItem
+            // 
+            this.bölümlerTablosuRaporuToolStripMenuItem.Name = "bölümlerTablosuRaporuToolStripMenuItem";
+            this.bölümlerTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
+            this.bölümlerTablosuRaporuToolStripMenuItem.Text = "Bölümler Tablosu Raporu";
+            // 
+            // odalarTablosuRaporuToolStripMenuItem
+            // 
+            this.odalarTablosuRaporuToolStripMenuItem.Name = "odalarTablosuRaporuToolStripMenuItem";
+            this.odalarTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
+            this.odalarTablosuRaporuToolStripMenuItem.Text = "Odalar Tablosu  Raporu";
+            // 
+            // personelTablosuRaporuToolStripMenuItem
+            // 
+            this.personelTablosuRaporuToolStripMenuItem.Name = "personelTablosuRaporuToolStripMenuItem";
+            this.personelTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
+            this.personelTablosuRaporuToolStripMenuItem.Text = "Personel Tablosu Raporu";
+            // 
             // yÖNETİCİToolStripMenuItem
             // 
             this.yÖNETİCİToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -231,7 +266,7 @@ namespace YurtKayitSistemi
             this.pictureBox2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox2.Location = new System.Drawing.Point(0, 536);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1172, 142);
+            this.pictureBox2.Size = new System.Drawing.Size(1250, 142);
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
@@ -242,7 +277,7 @@ namespace YurtKayitSistemi
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1070, 395);
+            this.dataGridView1.Size = new System.Drawing.Size(1143, 395);
             this.dataGridView1.TabIndex = 28;
             // 
             // odalarBindingSource
@@ -269,7 +304,7 @@ namespace YurtKayitSistemi
             this.lblSaat.AutoSize = true;
             this.lblSaat.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lblSaat.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSaat.Location = new System.Drawing.Point(872, 573);
+            this.lblSaat.Location = new System.Drawing.Point(1013, 572);
             this.lblSaat.Name = "lblSaat";
             this.lblSaat.Size = new System.Drawing.Size(31, 33);
             this.lblSaat.TabIndex = 29;
@@ -280,53 +315,18 @@ namespace YurtKayitSistemi
             this.lblTarih.AutoSize = true;
             this.lblTarih.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lblTarih.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTarih.Location = new System.Drawing.Point(785, 605);
+            this.lblTarih.Location = new System.Drawing.Point(926, 604);
             this.lblTarih.Name = "lblTarih";
             this.lblTarih.Size = new System.Drawing.Size(39, 33);
             this.lblTarih.TabIndex = 30;
             this.lblTarih.Text = "...";
-            // 
-            // raporOluşturmaToolStripMenuItem
-            // 
-            this.raporOluşturmaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.öğrenciTablosuRaporuToolStripMenuItem,
-            this.bölümlerTablosuRaporuToolStripMenuItem,
-            this.odalarTablosuRaporuToolStripMenuItem,
-            this.personelTablosuRaporuToolStripMenuItem});
-            this.raporOluşturmaToolStripMenuItem.Name = "raporOluşturmaToolStripMenuItem";
-            this.raporOluşturmaToolStripMenuItem.Size = new System.Drawing.Size(226, 28);
-            this.raporOluşturmaToolStripMenuItem.Text = "RAPOR OLUŞTURMA";
-            // 
-            // öğrenciTablosuRaporuToolStripMenuItem
-            // 
-            this.öğrenciTablosuRaporuToolStripMenuItem.Name = "öğrenciTablosuRaporuToolStripMenuItem";
-            this.öğrenciTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
-            this.öğrenciTablosuRaporuToolStripMenuItem.Text = "Öğrenci Tablosu Raporu";
-            // 
-            // bölümlerTablosuRaporuToolStripMenuItem
-            // 
-            this.bölümlerTablosuRaporuToolStripMenuItem.Name = "bölümlerTablosuRaporuToolStripMenuItem";
-            this.bölümlerTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
-            this.bölümlerTablosuRaporuToolStripMenuItem.Text = "Bölümler Tablosu Raporu";
-            // 
-            // odalarTablosuRaporuToolStripMenuItem
-            // 
-            this.odalarTablosuRaporuToolStripMenuItem.Name = "odalarTablosuRaporuToolStripMenuItem";
-            this.odalarTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
-            this.odalarTablosuRaporuToolStripMenuItem.Text = "Odalar Tablosu  Raporu";
-            // 
-            // personelTablosuRaporuToolStripMenuItem
-            // 
-            this.personelTablosuRaporuToolStripMenuItem.Name = "personelTablosuRaporuToolStripMenuItem";
-            this.personelTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
-            this.personelTablosuRaporuToolStripMenuItem.Text = "Personel Tablosu Raporu";
             // 
             // FrmAnaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1172, 678);
+            this.ClientSize = new System.Drawing.Size(1250, 678);
             this.Controls.Add(this.lblTarih);
             this.Controls.Add(this.lblSaat);
             this.Controls.Add(this.dataGridView1);

@@ -36,10 +36,6 @@ namespace YurtKayitSistemi
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ogridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrKalanBorcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.borclarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtOtomasyonuDataSet3 = new YurtKayitSistemi.YurtOtomasyonuDataSet3();
             this.txtKalanBorc = new System.Windows.Forms.TextBox();
@@ -105,14 +101,7 @@ namespace YurtKayitSistemi
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ogridDataGridViewTextBoxColumn,
-            this.ogrAdDataGridViewTextBoxColumn,
-            this.ogrSoyadDataGridViewTextBoxColumn,
-            this.ogrKalanBorcDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.borclarBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -120,38 +109,6 @@ namespace YurtKayitSistemi
             this.dataGridView1.Size = new System.Drawing.Size(684, 622);
             this.dataGridView1.TabIndex = 28;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // ogridDataGridViewTextBoxColumn
-            // 
-            this.ogridDataGridViewTextBoxColumn.DataPropertyName = "Ogrid";
-            this.ogridDataGridViewTextBoxColumn.HeaderText = "Ogrid";
-            this.ogridDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogridDataGridViewTextBoxColumn.Name = "ogridDataGridViewTextBoxColumn";
-            this.ogridDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrAdDataGridViewTextBoxColumn
-            // 
-            this.ogrAdDataGridViewTextBoxColumn.DataPropertyName = "OgrAd";
-            this.ogrAdDataGridViewTextBoxColumn.HeaderText = "OgrAd";
-            this.ogrAdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrAdDataGridViewTextBoxColumn.Name = "ogrAdDataGridViewTextBoxColumn";
-            this.ogrAdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrSoyadDataGridViewTextBoxColumn
-            // 
-            this.ogrSoyadDataGridViewTextBoxColumn.DataPropertyName = "OgrSoyad";
-            this.ogrSoyadDataGridViewTextBoxColumn.HeaderText = "OgrSoyad";
-            this.ogrSoyadDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrSoyadDataGridViewTextBoxColumn.Name = "ogrSoyadDataGridViewTextBoxColumn";
-            this.ogrSoyadDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrKalanBorcDataGridViewTextBoxColumn
-            // 
-            this.ogrKalanBorcDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ogrKalanBorcDataGridViewTextBoxColumn.DataPropertyName = "OgrKalanBorc";
-            this.ogrKalanBorcDataGridViewTextBoxColumn.HeaderText = "OgrKalanBorc";
-            this.ogrKalanBorcDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrKalanBorcDataGridViewTextBoxColumn.Name = "ogrKalanBorcDataGridViewTextBoxColumn";
             // 
             // borclarBindingSource
             // 
@@ -343,6 +300,8 @@ namespace YurtKayitSistemi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmOdemeler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ödemeler";
@@ -371,10 +330,6 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.BindingSource borclarBindingSource;
         private YurtOtomasyonuDataSet3TableAdapters.BorclarTableAdapter borclarTableAdapter;
         private System.Windows.Forms.TextBox txtOgrenciid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogridDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrAdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrSoyadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrKalanBorcDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtSoyad;

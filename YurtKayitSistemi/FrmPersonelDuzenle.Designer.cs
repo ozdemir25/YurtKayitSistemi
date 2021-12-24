@@ -32,12 +32,9 @@ namespace YurtKayitSistemi
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPersonelDuzenle));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurtOtomasyonuDataSet10 = new YurtKayitSistemi.YurtOtomasyonuDataSet10();
             this.personelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtOtomasyonuDataSet10 = new YurtKayitSistemi.YurtOtomasyonuDataSet10();
             this.personelTableAdapter = new YurtKayitSistemi.YurtOtomasyonuDataSet10TableAdapters.PersonelTableAdapter();
-            this.personelIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personelAdSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personelDepartmanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPersonelid = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtPersonelDepaetman = new System.Windows.Forms.TextBox();
@@ -49,20 +46,14 @@ namespace YurtKayitSistemi
             this.btnKaydet = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet10)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.personelIdDataGridViewTextBoxColumn,
-            this.personelAdSoyadDataGridViewTextBoxColumn,
-            this.personelDepartmanDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.personelBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -71,44 +62,19 @@ namespace YurtKayitSistemi
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // yurtOtomasyonuDataSet10
-            // 
-            this.yurtOtomasyonuDataSet10.DataSetName = "YurtOtomasyonuDataSet10";
-            this.yurtOtomasyonuDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // personelBindingSource
             // 
             this.personelBindingSource.DataMember = "Personel";
             this.personelBindingSource.DataSource = this.yurtOtomasyonuDataSet10;
             // 
+            // yurtOtomasyonuDataSet10
+            // 
+            this.yurtOtomasyonuDataSet10.DataSetName = "YurtOtomasyonuDataSet10";
+            this.yurtOtomasyonuDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // personelTableAdapter
             // 
             this.personelTableAdapter.ClearBeforeFill = true;
-            // 
-            // personelIdDataGridViewTextBoxColumn
-            // 
-            this.personelIdDataGridViewTextBoxColumn.DataPropertyName = "PersonelId";
-            this.personelIdDataGridViewTextBoxColumn.HeaderText = "PersonelId";
-            this.personelIdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.personelIdDataGridViewTextBoxColumn.Name = "personelIdDataGridViewTextBoxColumn";
-            this.personelIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.personelIdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // personelAdSoyadDataGridViewTextBoxColumn
-            // 
-            this.personelAdSoyadDataGridViewTextBoxColumn.DataPropertyName = "PersonelAdSoyad";
-            this.personelAdSoyadDataGridViewTextBoxColumn.HeaderText = "PersonelAdSoyad";
-            this.personelAdSoyadDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.personelAdSoyadDataGridViewTextBoxColumn.Name = "personelAdSoyadDataGridViewTextBoxColumn";
-            this.personelAdSoyadDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // personelDepartmanDataGridViewTextBoxColumn
-            // 
-            this.personelDepartmanDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.personelDepartmanDataGridViewTextBoxColumn.DataPropertyName = "PersonelDepartman";
-            this.personelDepartmanDataGridViewTextBoxColumn.HeaderText = "PersonelDepartman";
-            this.personelDepartmanDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.personelDepartmanDataGridViewTextBoxColumn.Name = "personelDepartmanDataGridViewTextBoxColumn";
             // 
             // txtPersonelid
             // 
@@ -244,8 +210,8 @@ namespace YurtKayitSistemi
             this.Text = "Personel Düzenleme";
             this.Load += new System.EventHandler(this.FrmPersonelDuzenle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet10)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -258,9 +224,6 @@ namespace YurtKayitSistemi
         private YurtOtomasyonuDataSet10 yurtOtomasyonuDataSet10;
         private System.Windows.Forms.BindingSource personelBindingSource;
         private YurtOtomasyonuDataSet10TableAdapters.PersonelTableAdapter personelTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn personelIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn personelAdSoyadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn personelDepartmanDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtPersonelid;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtPersonelDepaetman;

@@ -45,9 +45,6 @@ namespace YurtKayitSistemi
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yoneticiidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yoneticiAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yoneticiSifreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adminBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.yurtOtomasyonuDataSet9 = new YurtKayitSistemi.YurtOtomasyonuDataSet9();
             this.adminTableAdapter1 = new YurtKayitSistemi.YurtOtomasyonuDataSet9TableAdapters.AdminTableAdapter();
@@ -179,13 +176,7 @@ namespace YurtKayitSistemi
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.yoneticiidDataGridViewTextBoxColumn,
-            this.yoneticiAdDataGridViewTextBoxColumn,
-            this.yoneticiSifreDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.adminBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(580, 57);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -194,31 +185,6 @@ namespace YurtKayitSistemi
             this.dataGridView1.TabIndex = 37;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // yoneticiidDataGridViewTextBoxColumn
-            // 
-            this.yoneticiidDataGridViewTextBoxColumn.DataPropertyName = "Yoneticiid";
-            this.yoneticiidDataGridViewTextBoxColumn.HeaderText = "Yoneticiid";
-            this.yoneticiidDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.yoneticiidDataGridViewTextBoxColumn.Name = "yoneticiidDataGridViewTextBoxColumn";
-            this.yoneticiidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.yoneticiidDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // yoneticiAdDataGridViewTextBoxColumn
-            // 
-            this.yoneticiAdDataGridViewTextBoxColumn.DataPropertyName = "YoneticiAd";
-            this.yoneticiAdDataGridViewTextBoxColumn.HeaderText = "YoneticiAd";
-            this.yoneticiAdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.yoneticiAdDataGridViewTextBoxColumn.Name = "yoneticiAdDataGridViewTextBoxColumn";
-            this.yoneticiAdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // yoneticiSifreDataGridViewTextBoxColumn
-            // 
-            this.yoneticiSifreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.yoneticiSifreDataGridViewTextBoxColumn.DataPropertyName = "YoneticiSifre";
-            this.yoneticiSifreDataGridViewTextBoxColumn.HeaderText = "YoneticiSifre";
-            this.yoneticiSifreDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.yoneticiSifreDataGridViewTextBoxColumn.Name = "yoneticiSifreDataGridViewTextBoxColumn";
             // 
             // adminBindingSource1
             // 
@@ -287,8 +253,5 @@ namespace YurtKayitSistemi
         private YurtOtomasyonuDataSet9 yurtOtomasyonuDataSet9;
         private System.Windows.Forms.BindingSource adminBindingSource1;
         private YurtOtomasyonuDataSet9TableAdapters.AdminTableAdapter adminTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn yoneticiidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn yoneticiAdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn yoneticiSifreDataGridViewTextBoxColumn;
     }
 }

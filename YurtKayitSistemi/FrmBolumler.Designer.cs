@@ -35,8 +35,6 @@ namespace YurtKayitSistemi
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bolumIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bolumAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bolumlerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtOtomasyonuDataSet = new YurtKayitSistemi.YurtOtomasyonuDataSet();
             this.txtBolumId = new System.Windows.Forms.TextBox();
@@ -95,12 +93,7 @@ namespace YurtKayitSistemi
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.bolumIdDataGridViewTextBoxColumn,
-            this.bolumAdDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.bolumlerBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 182);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -109,23 +102,6 @@ namespace YurtKayitSistemi
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // bolumIdDataGridViewTextBoxColumn
-            // 
-            this.bolumIdDataGridViewTextBoxColumn.DataPropertyName = "BolumId";
-            this.bolumIdDataGridViewTextBoxColumn.HeaderText = "BolumId";
-            this.bolumIdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.bolumIdDataGridViewTextBoxColumn.Name = "bolumIdDataGridViewTextBoxColumn";
-            this.bolumIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.bolumIdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // bolumAdDataGridViewTextBoxColumn
-            // 
-            this.bolumAdDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.bolumAdDataGridViewTextBoxColumn.DataPropertyName = "BolumAd";
-            this.bolumAdDataGridViewTextBoxColumn.HeaderText = "BolumAd";
-            this.bolumAdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.bolumAdDataGridViewTextBoxColumn.Name = "bolumAdDataGridViewTextBoxColumn";
             // 
             // bolumlerBindingSource
             // 
@@ -188,6 +164,7 @@ namespace YurtKayitSistemi
             this.pictureBox4.Size = new System.Drawing.Size(1172, 142);
             this.pictureBox4.TabIndex = 26;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -292,8 +269,6 @@ namespace YurtKayitSistemi
         private YurtOtomasyonuDataSet yurtOtomasyonuDataSet;
         private System.Windows.Forms.BindingSource bolumlerBindingSource;
         private YurtOtomasyonuDataSetTableAdapters.BolumlerTableAdapter bolumlerTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bolumIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bolumAdDataGridViewTextBoxColumn;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label12;

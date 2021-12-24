@@ -24,7 +24,23 @@ namespace YurtKayitSistemi
         {
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet10.Personel' table. You can move, or remove it, as needed.
             this.personelTableAdapter.Fill(this.yurtOtomasyonuDataSet10.Personel);
-            dataGridView1.Columns[0].Width = 60;
+            PersonelKayıtGetir();   
+            dataGridView1.Columns[0].Width = 50;
+            dataGridView1.Columns[1].Width = 150;
+            dataGridView1.Columns[2].Width = 146;
+        }
+
+        //dataGridViewe Personel Kayıt Getirir.
+        private void PersonelKayıtGetir()
+        {
+            //Bölümler Tablosundaki verileri getirir.
+            string kayit = "Select * From Personel";
+            SqlCommand komut = new SqlCommand(kayit, bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter(komut);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            bgl.baglanti().Close();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)

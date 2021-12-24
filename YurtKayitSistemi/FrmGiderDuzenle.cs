@@ -36,9 +36,12 @@ namespace YurtKayitSistemi
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet4.Giderler' table. You can move, or remove it, as needed.
             this.giderlerTableAdapter.Fill(this.yurtOtomasyonuDataSet4.Giderler);
             bolumlerGetir();
-            dataGridView1.Columns[0].Width = 60;
-            //dataGridView1.Columns[1].Width = 80;
-            //dataGridView1.Columns[2].Width = 100;
+            dataGridView1.Columns[0].Width = 100;
+            dataGridView1.Columns[1].Width = 100;
+            dataGridView1.Columns[2].Width = 100;
+            dataGridView1.Columns[3].Width = 100;
+            dataGridView1.Columns[4].Width = 100;
+            dataGridView1.Columns[7].Width = 158;
         }
         
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -126,20 +129,10 @@ namespace YurtKayitSistemi
                 }
                 y = y + 30;
             }
-            
-            /*
-            Bitmap bmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
-            dataGridView1.DrawToBitmap(bmap, new Rectangle(0, 80, dataGridView1.Width, dataGridView1.Height));
-            e.Graphics.DrawImage(bmap, 0, 0);
-            */
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            /*
-             printDocument1.Print();
-             */
-
             pageSetupDialog1.Document = printDocument1;
             pageSetupDialog1.PageSettings = printDocument1.DefaultPageSettings;
             if (pageSetupDialog1.ShowDialog() == DialogResult.OK) 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using System.Data.SqlClient;
 
 namespace YurtKayitSistemi
@@ -17,33 +18,32 @@ namespace YurtKayitSistemi
         {
             InitializeComponent();
         }
+        sqlBaglantim bgl = new sqlBaglantim();
 
-        SqlConnection con;
-        SqlDataAdapter da;
-        DataSet ds;
-        public void gridDoldur()
+        //dataGridView verileri getirir.
+        public void OgrenciKayıtGetir()
         {
-            con = new SqlConnection("Data Source=DESKTOP-0UK1IES;Initial Catalog=YurtOtomasyonu;Integrated Security=True");
-            da = new SqlDataAdapter("Select * From Ogrenci", con);
-            ds = new DataSet();
-            con.Open();
-            da.Fill(ds, "Ogrenci");
-            dataGridView1.DataSource = ds.Tables["Ogrenci"];
-            con.Close();
+            //Bölümler Tablosundaki verileri getirir.
+            string kayit = "Select * From Ogrenci";
+            SqlCommand komut = new SqlCommand(kayit, bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter(komut);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            bgl.baglanti().Close();
         }
 
         private void FrmOgrListele_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet2.Ogrenci' table. You can move, or remove it, as needed.
             this.ogrenciTableAdapter.Fill(this.yurtOtomasyonuDataSet2.Ogrenci);
-
-            gridDoldur();
+            OgrenciKayıtGetir();
 
             dataGridView1.Columns[6].Width = 200;
             dataGridView1.Columns[7].Width = 150;
-            dataGridView1.Columns[9].Width = 110;
+            dataGridView1.Columns[9].Width = 90;
+            dataGridView1.Columns[10].Width = 130;
             dataGridView1.Columns[11].Width = 222;
-
             MessageBox.Show("Öğrenciyi GÜNCELLEMEK veya SİLMEK için Öğrencinin üzerine tek tıklamanız yeterlidir.");
         }
 

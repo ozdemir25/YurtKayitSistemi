@@ -24,8 +24,24 @@ namespace YurtKayitSistemi
         {
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet3.Borclar' table. You can move, or remove it, as needed.
             this.borclarTableAdapter.Fill(this.yurtOtomasyonuDataSet3.Borclar);
-            dataGridView1.Columns[0].Width = 80;
             btnYazdır.Visible = false;
+            odemelerKayıtGetir();
+            dataGridView1.Columns[1].Width = 120;
+            dataGridView1.Columns[2].Width = 120;
+            dataGridView1.Columns[3].Width = 120;
+        }
+
+        //dataGridViewe verileri getirir.
+        private void odemelerKayıtGetir()
+        {
+            //Bölümler Tablosundaki verileri getirir.
+            string kayit = "Select * From Borclar";
+            SqlCommand komut = new SqlCommand(kayit, bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter(komut);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            bgl.baglanti().Close();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

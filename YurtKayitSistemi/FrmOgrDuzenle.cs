@@ -32,7 +32,7 @@ namespace YurtKayitSistemi
                 bgl.baglanti().Close();
                 MessageBox.Show("Kayıt Silindi.");
                 FrmOgrListele frmOgrListele = (FrmOgrListele)Application.OpenForms["FrmOgrListele"];
-                frmOgrListele.gridDoldur();
+                frmOgrListele.OgrenciKayıtGetir();
             }
             catch (Exception ex)
             {
@@ -72,7 +72,7 @@ namespace YurtKayitSistemi
                 bgl.baglanti().Close();
                 MessageBox.Show("Kayıt Güncelledi.");
                 FrmOgrListele frmOgrListele = (FrmOgrListele)Application.OpenForms["FrmOgrListele"];
-                frmOgrListele.gridDoldur();
+                frmOgrListele.OgrenciKayıtGetir();
             }
             catch (Exception hata)
             {

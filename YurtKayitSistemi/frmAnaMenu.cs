@@ -46,7 +46,7 @@ namespace YurtKayitSistemi
 
             AnaMenuGridDoldur();
             dataGridView1.Columns[0].Width = 60;
-            dataGridView1.Columns[4].Width = 372;
+            dataGridView1.Columns[4].Width = 427;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

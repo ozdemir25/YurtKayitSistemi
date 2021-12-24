@@ -48,6 +48,7 @@ namespace YurtKayitSistemi
             // TODO: This line of code loads data into the 'yurtOtomasyonuDataSet.Bolumler' table. You can move, or remove it, as needed.
             this.bolumlerTableAdapter.Fill(this.yurtOtomasyonuDataSet.Bolumler);
             BolumlerKayitGetir();
+            dataGridView1.Columns[1].Width = 340;
         }
         private void BolumlerKayitGetir()
         {
@@ -122,6 +123,11 @@ namespace YurtKayitSistemi
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }
