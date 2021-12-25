@@ -44,12 +44,7 @@ namespace YurtKayitSistemi
             this.giderListeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iSTATİSTİKLERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gelirİstatistikleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.giderİstatistikleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.raporOluşturmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.öğrenciTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bölümlerTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.odalarTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personelTablosuRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yÖNETİCİToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yöneticiEkleSilGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelDüzenlemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,8 +163,7 @@ namespace YurtKayitSistemi
             // iSTATİSTİKLERToolStripMenuItem
             // 
             this.iSTATİSTİKLERToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gelirİstatistikleriToolStripMenuItem,
-            this.giderİstatistikleriToolStripMenuItem});
+            this.gelirİstatistikleriToolStripMenuItem});
             this.iSTATİSTİKLERToolStripMenuItem.Name = "iSTATİSTİKLERToolStripMenuItem";
             this.iSTATİSTİKLERToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
             this.iSTATİSTİKLERToolStripMenuItem.Text = "İSTATİSTİKLER";
@@ -177,50 +171,15 @@ namespace YurtKayitSistemi
             // gelirİstatistikleriToolStripMenuItem
             // 
             this.gelirİstatistikleriToolStripMenuItem.Name = "gelirİstatistikleriToolStripMenuItem";
-            this.gelirİstatistikleriToolStripMenuItem.Size = new System.Drawing.Size(261, 28);
+            this.gelirİstatistikleriToolStripMenuItem.Size = new System.Drawing.Size(254, 28);
             this.gelirİstatistikleriToolStripMenuItem.Text = "Gelir İstatistikleri";
             this.gelirİstatistikleriToolStripMenuItem.Click += new System.EventHandler(this.gelirİstatistikleriToolStripMenuItem_Click);
             // 
-            // giderİstatistikleriToolStripMenuItem
-            // 
-            this.giderİstatistikleriToolStripMenuItem.Name = "giderİstatistikleriToolStripMenuItem";
-            this.giderİstatistikleriToolStripMenuItem.Size = new System.Drawing.Size(261, 28);
-            this.giderİstatistikleriToolStripMenuItem.Text = "Gider İstatistikleri";
-            // 
             // raporOluşturmaToolStripMenuItem
             // 
-            this.raporOluşturmaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.öğrenciTablosuRaporuToolStripMenuItem,
-            this.bölümlerTablosuRaporuToolStripMenuItem,
-            this.odalarTablosuRaporuToolStripMenuItem,
-            this.personelTablosuRaporuToolStripMenuItem});
             this.raporOluşturmaToolStripMenuItem.Name = "raporOluşturmaToolStripMenuItem";
             this.raporOluşturmaToolStripMenuItem.Size = new System.Drawing.Size(226, 28);
             this.raporOluşturmaToolStripMenuItem.Text = "RAPOR OLUŞTURMA";
-            // 
-            // öğrenciTablosuRaporuToolStripMenuItem
-            // 
-            this.öğrenciTablosuRaporuToolStripMenuItem.Name = "öğrenciTablosuRaporuToolStripMenuItem";
-            this.öğrenciTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
-            this.öğrenciTablosuRaporuToolStripMenuItem.Text = "Öğrenci Tablosu Raporu";
-            // 
-            // bölümlerTablosuRaporuToolStripMenuItem
-            // 
-            this.bölümlerTablosuRaporuToolStripMenuItem.Name = "bölümlerTablosuRaporuToolStripMenuItem";
-            this.bölümlerTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
-            this.bölümlerTablosuRaporuToolStripMenuItem.Text = "Bölümler Tablosu Raporu";
-            // 
-            // odalarTablosuRaporuToolStripMenuItem
-            // 
-            this.odalarTablosuRaporuToolStripMenuItem.Name = "odalarTablosuRaporuToolStripMenuItem";
-            this.odalarTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
-            this.odalarTablosuRaporuToolStripMenuItem.Text = "Odalar Tablosu  Raporu";
-            // 
-            // personelTablosuRaporuToolStripMenuItem
-            // 
-            this.personelTablosuRaporuToolStripMenuItem.Name = "personelTablosuRaporuToolStripMenuItem";
-            this.personelTablosuRaporuToolStripMenuItem.Size = new System.Drawing.Size(334, 28);
-            this.personelTablosuRaporuToolStripMenuItem.Text = "Personel Tablosu Raporu";
             // 
             // yÖNETİCİToolStripMenuItem
             // 
@@ -367,7 +326,6 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.ToolStripMenuItem giderListeleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iSTATİSTİKLERToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gelirİstatistikleriToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem giderİstatistikleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yÖNETİCİToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelDüzenlemeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hakkımızdaToolStripMenuItem;
@@ -381,9 +339,5 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.Label lblTarih;
         private System.Windows.Forms.ToolStripMenuItem yöneticiEkleSilGüncelleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem raporOluşturmaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem öğrenciTablosuRaporuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bölümlerTablosuRaporuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem odalarTablosuRaporuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personelTablosuRaporuToolStripMenuItem;
     }
 }

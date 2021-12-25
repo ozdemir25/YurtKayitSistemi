@@ -126,7 +126,7 @@ namespace YurtKayitSistemi
 
         private void hakkımızdaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Bu proje Şafak Yılmaz ve Muhammet Özdemir tarafından hazırlanmıştır.");
         }
     }
 }
