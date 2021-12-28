@@ -221,7 +221,7 @@ namespace YurtKayitSistemi
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(55)))), ((int)(((byte)(77)))));
             this.pictureBox2.Location = new System.Drawing.Point(0, 536);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1250, 142);
@@ -246,9 +246,10 @@ namespace YurtKayitSistemi
             // lblSaat
             // 
             this.lblSaat.AutoSize = true;
-            this.lblSaat.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.lblSaat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(55)))), ((int)(((byte)(77)))));
             this.lblSaat.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSaat.Location = new System.Drawing.Point(1013, 572);
+            this.lblSaat.ForeColor = System.Drawing.Color.White;
+            this.lblSaat.Location = new System.Drawing.Point(945, 572);
             this.lblSaat.Name = "lblSaat";
             this.lblSaat.Size = new System.Drawing.Size(31, 33);
             this.lblSaat.TabIndex = 29;
@@ -257,9 +258,10 @@ namespace YurtKayitSistemi
             // lblTarih
             // 
             this.lblTarih.AutoSize = true;
-            this.lblTarih.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.lblTarih.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(55)))), ((int)(((byte)(77)))));
             this.lblTarih.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTarih.Location = new System.Drawing.Point(926, 604);
+            this.lblTarih.ForeColor = System.Drawing.Color.White;
+            this.lblTarih.Location = new System.Drawing.Point(858, 604);
             this.lblTarih.Name = "lblTarih";
             this.lblTarih.Size = new System.Drawing.Size(39, 33);
             this.lblTarih.TabIndex = 30;
@@ -283,7 +285,7 @@ namespace YurtKayitSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(104)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(1250, 678);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTarih);

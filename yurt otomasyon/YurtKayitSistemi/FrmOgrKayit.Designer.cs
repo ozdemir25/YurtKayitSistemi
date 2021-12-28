@@ -58,15 +58,18 @@ namespace YurtKayitSistemi
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(156, 169);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(157, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 25);
             this.label1.TabIndex = 0;
@@ -76,7 +79,7 @@ namespace YurtKayitSistemi
             // 
             this.txtOgrAdi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOgrAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOgrAdi.Location = new System.Drawing.Point(273, 163);
+            this.txtOgrAdi.Location = new System.Drawing.Point(293, 156);
             this.txtOgrAdi.Name = "txtOgrAdi";
             this.txtOgrAdi.Size = new System.Drawing.Size(282, 30);
             this.txtOgrAdi.TabIndex = 1;
@@ -84,7 +87,7 @@ namespace YurtKayitSistemi
             // txtOgrSoyadi
             // 
             this.txtOgrSoyadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOgrSoyadi.Location = new System.Drawing.Point(777, 163);
+            this.txtOgrSoyadi.Location = new System.Drawing.Point(835, 156);
             this.txtOgrSoyadi.Name = "txtOgrSoyadi";
             this.txtOgrSoyadi.Size = new System.Drawing.Size(282, 30);
             this.txtOgrSoyadi.TabIndex = 2;
@@ -93,7 +96,8 @@ namespace YurtKayitSistemi
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(632, 169);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(663, 156);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(174, 25);
             this.label2.TabIndex = 2;
@@ -103,7 +107,8 @@ namespace YurtKayitSistemi
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(228, 218);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(246, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 25);
             this.label3.TabIndex = 4;
@@ -112,7 +117,7 @@ namespace YurtKayitSistemi
             // mskOgrTC
             // 
             this.mskOgrTC.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskOgrTC.Location = new System.Drawing.Point(273, 212);
+            this.mskOgrTC.Location = new System.Drawing.Point(293, 205);
             this.mskOgrTC.Mask = "00000000000";
             this.mskOgrTC.Name = "mskOgrTC";
             this.mskOgrTC.Size = new System.Drawing.Size(282, 30);
@@ -122,7 +127,7 @@ namespace YurtKayitSistemi
             // mskOgrTelefon
             // 
             this.mskOgrTelefon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskOgrTelefon.Location = new System.Drawing.Point(777, 212);
+            this.mskOgrTelefon.Location = new System.Drawing.Point(835, 205);
             this.mskOgrTelefon.Mask = "(999) 000-0000";
             this.mskOgrTelefon.Name = "mskOgrTelefon";
             this.mskOgrTelefon.Size = new System.Drawing.Size(282, 30);
@@ -132,7 +137,8 @@ namespace YurtKayitSistemi
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(628, 218);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(657, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(180, 25);
             this.label4.TabIndex = 6;
@@ -141,7 +147,7 @@ namespace YurtKayitSistemi
             // mskOgrDogumTarihi
             // 
             this.mskOgrDogumTarihi.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskOgrDogumTarihi.Location = new System.Drawing.Point(273, 265);
+            this.mskOgrDogumTarihi.Location = new System.Drawing.Point(293, 258);
             this.mskOgrDogumTarihi.Mask = "00/00/0000";
             this.mskOgrDogumTarihi.Name = "mskOgrDogumTarihi";
             this.mskOgrDogumTarihi.Size = new System.Drawing.Size(282, 30);
@@ -152,7 +158,8 @@ namespace YurtKayitSistemi
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(78, 271);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(60, 258);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(236, 25);
             this.label5.TabIndex = 8;
@@ -162,7 +169,8 @@ namespace YurtKayitSistemi
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(625, 268);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(658, 258);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(179, 25);
             this.label6.TabIndex = 10;
@@ -172,7 +180,7 @@ namespace YurtKayitSistemi
             // 
             this.cmbOgrBolum.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbOgrBolum.FormattingEnabled = true;
-            this.cmbOgrBolum.Location = new System.Drawing.Point(777, 265);
+            this.cmbOgrBolum.Location = new System.Drawing.Point(835, 258);
             this.cmbOgrBolum.Name = "cmbOgrBolum";
             this.cmbOgrBolum.Size = new System.Drawing.Size(282, 32);
             this.cmbOgrBolum.TabIndex = 6;
@@ -181,7 +189,7 @@ namespace YurtKayitSistemi
             // 
             this.txtOgrMail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOgrMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOgrMail.Location = new System.Drawing.Point(273, 314);
+            this.txtOgrMail.Location = new System.Drawing.Point(293, 307);
             this.txtOgrMail.Name = "txtOgrMail";
             this.txtOgrMail.Size = new System.Drawing.Size(282, 30);
             this.txtOgrMail.TabIndex = 7;
@@ -190,7 +198,8 @@ namespace YurtKayitSistemi
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(150, 317);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(149, 307);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(147, 25);
             this.label7.TabIndex = 12;
@@ -200,7 +209,8 @@ namespace YurtKayitSistemi
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(626, 317);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(656, 307);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(181, 25);
             this.label8.TabIndex = 14;
@@ -210,7 +220,7 @@ namespace YurtKayitSistemi
             // 
             this.txtOgrVeliAdiSoyadi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOgrVeliAdiSoyadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOgrVeliAdiSoyadi.Location = new System.Drawing.Point(273, 362);
+            this.txtOgrVeliAdiSoyadi.Location = new System.Drawing.Point(293, 355);
             this.txtOgrVeliAdiSoyadi.Name = "txtOgrVeliAdiSoyadi";
             this.txtOgrVeliAdiSoyadi.Size = new System.Drawing.Size(282, 30);
             this.txtOgrVeliAdiSoyadi.TabIndex = 9;
@@ -219,7 +229,8 @@ namespace YurtKayitSistemi
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(42, 365);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(12, 355);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(284, 25);
             this.label9.TabIndex = 16;
@@ -228,7 +239,7 @@ namespace YurtKayitSistemi
             // mskOgrVeliTelefonNo
             // 
             this.mskOgrVeliTelefonNo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskOgrVeliTelefonNo.Location = new System.Drawing.Point(777, 362);
+            this.mskOgrVeliTelefonNo.Location = new System.Drawing.Point(835, 355);
             this.mskOgrVeliTelefonNo.Mask = "(999) 000-0000";
             this.mskOgrVeliTelefonNo.Name = "mskOgrVeliTelefonNo";
             this.mskOgrVeliTelefonNo.Size = new System.Drawing.Size(282, 30);
@@ -238,7 +249,8 @@ namespace YurtKayitSistemi
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(568, 365);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(581, 355);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(256, 25);
             this.label10.TabIndex = 18;
@@ -248,7 +260,8 @@ namespace YurtKayitSistemi
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(706, 414);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(755, 400);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(82, 25);
             this.label11.TabIndex = 20;
@@ -256,7 +269,7 @@ namespace YurtKayitSistemi
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(777, 417);
+            this.richTextBox1.Location = new System.Drawing.Point(835, 400);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(282, 133);
             this.richTextBox1.TabIndex = 11;
@@ -264,13 +277,14 @@ namespace YurtKayitSistemi
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(901, 571);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(939, 598);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 55);
+            this.button1.Size = new System.Drawing.Size(96, 32);
             this.button1.TabIndex = 12;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;
@@ -280,14 +294,14 @@ namespace YurtKayitSistemi
             // 
             this.cmbOdaNo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbOdaNo.FormattingEnabled = true;
-            this.cmbOdaNo.Location = new System.Drawing.Point(777, 314);
+            this.cmbOdaNo.Location = new System.Drawing.Point(835, 307);
             this.cmbOdaNo.Name = "cmbOdaNo";
             this.cmbOdaNo.Size = new System.Drawing.Size(282, 32);
             this.cmbOdaNo.TabIndex = 8;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(55)))), ((int)(((byte)(77)))));
             this.pictureBox1.Location = new System.Drawing.Point(1, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1185, 142);
@@ -296,7 +310,7 @@ namespace YurtKayitSistemi
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(55)))), ((int)(((byte)(77)))));
             this.pictureBox2.Location = new System.Drawing.Point(1, 632);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1185, 142);
@@ -306,8 +320,9 @@ namespace YurtKayitSistemi
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(55)))), ((int)(((byte)(77)))));
             this.label12.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(491, 56);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(207, 33);
@@ -317,7 +332,8 @@ namespace YurtKayitSistemi
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(151, 533);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(209, 526);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(51, 16);
             this.label13.TabIndex = 28;
@@ -326,7 +342,7 @@ namespace YurtKayitSistemi
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(55)))), ((int)(((byte)(77)))));
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -338,12 +354,24 @@ namespace YurtKayitSistemi
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(948, 539);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(78, 64);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 33;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // FrmOgrKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(104)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(1186, 772);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -383,6 +411,7 @@ namespace YurtKayitSistemi
             this.Load += new System.EventHandler(this.FrmOgrKayit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,6 +447,7 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

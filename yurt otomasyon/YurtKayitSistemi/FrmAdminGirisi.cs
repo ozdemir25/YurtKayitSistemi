@@ -24,16 +24,31 @@ namespace YurtKayitSistemi
             AW_BLEND = 0x00080000
         }
 
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+       (
+           int nLeftRect,     // x-coordinate of upper-left corner
+           int nTopRect,      // y-coordinate of upper-left corner
+           int nRightRect,    // x-coordinate of lower-right corner
+           int nBottomRect,   // y-coordinate of lower-right corner
+           int nWidthEllipse, // width of ellipse
+           int nHeightEllipse // height of ellipse
+       );
+
         public FrmAdminGirisi()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+           
+
         }
         sqlBaglantim bgl = new sqlBaglantim();
 
         private void FrmAdminGirisi_Load(object sender, EventArgs e)
         {
             txtSifre.PasswordChar = '*';
-            AnimateWindow(this.Handle, 1500, AnimateWindowFlags.AW_CENTER);
+            AnimateWindow(this.Handle, 500, AnimateWindowFlags.AW_CENTER);
 
         }
 
