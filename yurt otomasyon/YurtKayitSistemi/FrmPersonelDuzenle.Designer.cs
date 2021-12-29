@@ -71,7 +71,7 @@ namespace YurtKayitSistemi
             this.txtPersonelid.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPersonelid.Enabled = false;
             this.txtPersonelid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtPersonelid.Location = new System.Drawing.Point(234, 436);
+            this.txtPersonelid.Location = new System.Drawing.Point(281, 433);
             this.txtPersonelid.Name = "txtPersonelid";
             this.txtPersonelid.Size = new System.Drawing.Size(282, 30);
             this.txtPersonelid.TabIndex = 56;
@@ -81,7 +81,7 @@ namespace YurtKayitSistemi
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(105, 436);
+            this.label8.Location = new System.Drawing.Point(116, 436);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(134, 25);
             this.label8.TabIndex = 55;
@@ -91,7 +91,7 @@ namespace YurtKayitSistemi
             // 
             this.txtPersonelDepaetman.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPersonelDepaetman.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtPersonelDepaetman.Location = new System.Drawing.Point(234, 533);
+            this.txtPersonelDepaetman.Location = new System.Drawing.Point(281, 530);
             this.txtPersonelDepaetman.Name = "txtPersonelDepaetman";
             this.txtPersonelDepaetman.Size = new System.Drawing.Size(282, 30);
             this.txtPersonelDepaetman.TabIndex = 58;
@@ -101,7 +101,7 @@ namespace YurtKayitSistemi
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(18, 533);
+            this.label1.Location = new System.Drawing.Point(24, 533);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(221, 25);
             this.label1.TabIndex = 57;
@@ -111,7 +111,7 @@ namespace YurtKayitSistemi
             // 
             this.txtPersonelAd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPersonelAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtPersonelAd.Location = new System.Drawing.Point(234, 484);
+            this.txtPersonelAd.Location = new System.Drawing.Point(281, 481);
             this.txtPersonelAd.Name = "txtPersonelAd";
             this.txtPersonelAd.Size = new System.Drawing.Size(282, 30);
             this.txtPersonelAd.TabIndex = 60;
@@ -121,7 +121,7 @@ namespace YurtKayitSistemi
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(91, 484);
+            this.label2.Location = new System.Drawing.Point(103, 484);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 25);
             this.label2.TabIndex = 59;
@@ -249,7 +249,7 @@ namespace YurtKayitSistemi
             this.Controls.Add(this.txtPersonelid);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView1);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

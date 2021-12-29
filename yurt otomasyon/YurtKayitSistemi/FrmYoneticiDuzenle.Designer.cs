@@ -30,6 +30,7 @@ namespace YurtKayitSistemi
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmYoneticiDuzenle));
             this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button3 = new System.Windows.Forms.Button();
@@ -104,7 +105,7 @@ namespace YurtKayitSistemi
             // txtKullaniciSifre
             // 
             this.txtKullaniciSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKullaniciSifre.Location = new System.Drawing.Point(204, 246);
+            this.txtKullaniciSifre.Location = new System.Drawing.Point(228, 246);
             this.txtKullaniciSifre.Name = "txtKullaniciSifre";
             this.txtKullaniciSifre.Size = new System.Drawing.Size(282, 30);
             this.txtKullaniciSifre.TabIndex = 33;
@@ -123,7 +124,7 @@ namespace YurtKayitSistemi
             // txtKullaniciAd
             // 
             this.txtKullaniciAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKullaniciAd.Location = new System.Drawing.Point(204, 199);
+            this.txtKullaniciAd.Location = new System.Drawing.Point(228, 199);
             this.txtKullaniciAd.Name = "txtKullaniciAd";
             this.txtKullaniciAd.Size = new System.Drawing.Size(282, 30);
             this.txtKullaniciAd.TabIndex = 31;
@@ -143,7 +144,7 @@ namespace YurtKayitSistemi
             // 
             this.txtYoneticiid.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtYoneticiid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtYoneticiid.Location = new System.Drawing.Point(204, 152);
+            this.txtYoneticiid.Location = new System.Drawing.Point(228, 152);
             this.txtYoneticiid.Name = "txtYoneticiid";
             this.txtYoneticiid.Size = new System.Drawing.Size(282, 30);
             this.txtYoneticiid.TabIndex = 29;
@@ -170,8 +171,17 @@ namespace YurtKayitSistemi
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dataGridView1.Location = new System.Drawing.Point(580, 57);
             this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(507, 418);
@@ -248,7 +258,7 @@ namespace YurtKayitSistemi
             this.Controls.Add(this.txtYoneticiid);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

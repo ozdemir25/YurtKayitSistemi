@@ -59,6 +59,7 @@ namespace YurtKayitSistemi
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.giderlerBindingSource)).BeginInit();
@@ -91,7 +92,7 @@ namespace YurtKayitSistemi
             // 
             this.txtElektrik.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtElektrik.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtElektrik.Location = new System.Drawing.Point(132, 490);
+            this.txtElektrik.Location = new System.Drawing.Point(146, 490);
             this.txtElektrik.Name = "txtElektrik";
             this.txtElektrik.Size = new System.Drawing.Size(282, 30);
             this.txtElektrik.TabIndex = 3;
@@ -111,7 +112,7 @@ namespace YurtKayitSistemi
             // 
             this.txtGıda.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGıda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtGıda.Location = new System.Drawing.Point(546, 484);
+            this.txtGıda.Location = new System.Drawing.Point(567, 484);
             this.txtGıda.Name = "txtGıda";
             this.txtGıda.Size = new System.Drawing.Size(282, 30);
             this.txtGıda.TabIndex = 4;
@@ -131,7 +132,7 @@ namespace YurtKayitSistemi
             // 
             this.txtDogalgaz.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDogalgaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDogalgaz.Location = new System.Drawing.Point(132, 581);
+            this.txtDogalgaz.Location = new System.Drawing.Point(146, 581);
             this.txtDogalgaz.Name = "txtDogalgaz";
             this.txtDogalgaz.Size = new System.Drawing.Size(282, 30);
             this.txtDogalgaz.TabIndex = 7;
@@ -151,7 +152,7 @@ namespace YurtKayitSistemi
             // 
             this.txtMaaslar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaaslar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtMaaslar.Location = new System.Drawing.Point(546, 531);
+            this.txtMaaslar.Location = new System.Drawing.Point(567, 531);
             this.txtMaaslar.Name = "txtMaaslar";
             this.txtMaaslar.Size = new System.Drawing.Size(282, 30);
             this.txtMaaslar.TabIndex = 6;
@@ -171,7 +172,7 @@ namespace YurtKayitSistemi
             // 
             this.txtInternet.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtInternet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtInternet.Location = new System.Drawing.Point(546, 437);
+            this.txtInternet.Location = new System.Drawing.Point(567, 437);
             this.txtInternet.Name = "txtInternet";
             this.txtInternet.Size = new System.Drawing.Size(282, 30);
             this.txtInternet.TabIndex = 2;
@@ -191,7 +192,7 @@ namespace YurtKayitSistemi
             // 
             this.txtSu.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSu.Location = new System.Drawing.Point(132, 534);
+            this.txtSu.Location = new System.Drawing.Point(146, 534);
             this.txtSu.Name = "txtSu";
             this.txtSu.Size = new System.Drawing.Size(282, 30);
             this.txtSu.TabIndex = 5;
@@ -201,7 +202,7 @@ namespace YurtKayitSistemi
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(83, 531);
+            this.label2.Location = new System.Drawing.Point(88, 531);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 25);
             this.label2.TabIndex = 43;
@@ -211,7 +212,7 @@ namespace YurtKayitSistemi
             // 
             this.txtDiger.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDiger.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDiger.Location = new System.Drawing.Point(546, 583);
+            this.txtDiger.Location = new System.Drawing.Point(567, 583);
             this.txtDiger.Name = "txtDiger";
             this.txtDiger.Size = new System.Drawing.Size(282, 30);
             this.txtDiger.TabIndex = 8;
@@ -262,7 +263,7 @@ namespace YurtKayitSistemi
             // 
             this.txtOdemeid.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOdemeid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdemeid.Location = new System.Drawing.Point(132, 443);
+            this.txtOdemeid.Location = new System.Drawing.Point(146, 443);
             this.txtOdemeid.Name = "txtOdemeid";
             this.txtOdemeid.Size = new System.Drawing.Size(282, 30);
             this.txtOdemeid.TabIndex = 1;
@@ -340,12 +341,25 @@ namespace YurtKayitSistemi
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(104)))), ((int)(((byte)(130)))));
+            this.label12.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(497, 33);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(275, 45);
+            this.label12.TabIndex = 58;
+            this.label12.Text = "Gider Düzenle";
+            // 
             // FrmGiderDuzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(104)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(1234, 791);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button2);
@@ -418,5 +432,6 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label12;
     }
 }

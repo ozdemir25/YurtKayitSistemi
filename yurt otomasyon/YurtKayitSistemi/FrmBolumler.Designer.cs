@@ -106,7 +106,7 @@ namespace YurtKayitSistemi
             this.txtBolumId.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBolumId.Enabled = false;
             this.txtBolumId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBolumId.Location = new System.Drawing.Point(821, 256);
+            this.txtBolumId.Location = new System.Drawing.Point(842, 256);
             this.txtBolumId.Name = "txtBolumId";
             this.txtBolumId.Size = new System.Drawing.Size(282, 30);
             this.txtBolumId.TabIndex = 5;
@@ -126,7 +126,7 @@ namespace YurtKayitSistemi
             // 
             this.txtBolumAdi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBolumAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBolumAdi.Location = new System.Drawing.Point(821, 309);
+            this.txtBolumAdi.Location = new System.Drawing.Point(842, 309);
             this.txtBolumAdi.Name = "txtBolumAdi";
             this.txtBolumAdi.Size = new System.Drawing.Size(282, 30);
             this.txtBolumAdi.TabIndex = 7;

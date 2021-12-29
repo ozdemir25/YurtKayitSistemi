@@ -57,7 +57,7 @@ namespace YurtKayitSistemi
         DataSet ds;
         public void AnaMenuGridDoldur()
         {
-            con = new SqlConnection("Data Source=DESKTOP-6OH7MQ2;Initial Catalog=YurtOtomasyonu;Integrated Security=True");
+            con = new SqlConnection("Data Source=DESKTOP-0UK1IES;Initial Catalog=YurtOtomasyonu;Integrated Security=True");
             da = new SqlDataAdapter("Select * From Odalar", con);
             ds = new DataSet();
             con.Open();

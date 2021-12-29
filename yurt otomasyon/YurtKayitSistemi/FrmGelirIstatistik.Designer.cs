@@ -43,6 +43,7 @@ namespace YurtKayitSistemi
             this.label5 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -82,7 +83,7 @@ namespace YurtKayitSistemi
             // 
             this.cmbAySecim.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbAySecim.FormattingEnabled = true;
-            this.cmbAySecim.Location = new System.Drawing.Point(204, 176);
+            this.cmbAySecim.Location = new System.Drawing.Point(220, 173);
             this.cmbAySecim.Name = "cmbAySecim";
             this.cmbAySecim.Size = new System.Drawing.Size(282, 32);
             this.cmbAySecim.TabIndex = 30;
@@ -104,7 +105,7 @@ namespace YurtKayitSistemi
             this.lblKasaParası.AutoSize = true;
             this.lblKasaParası.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblKasaParası.ForeColor = System.Drawing.Color.White;
-            this.lblKasaParası.Location = new System.Drawing.Point(934, 175);
+            this.lblKasaParası.Location = new System.Drawing.Point(974, 175);
             this.lblKasaParası.Name = "lblKasaParası";
             this.lblKasaParası.Size = new System.Drawing.Size(24, 25);
             this.lblKasaParası.TabIndex = 32;
@@ -115,7 +116,7 @@ namespace YurtKayitSistemi
             this.lblSecilenAyParası.AutoSize = true;
             this.lblSecilenAyParası.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSecilenAyParası.ForeColor = System.Drawing.Color.White;
-            this.lblSecilenAyParası.Location = new System.Drawing.Point(934, 240);
+            this.lblSecilenAyParası.Location = new System.Drawing.Point(974, 240);
             this.lblSecilenAyParası.Name = "lblSecilenAyParası";
             this.lblSecilenAyParası.Size = new System.Drawing.Size(24, 25);
             this.lblSecilenAyParası.TabIndex = 34;
@@ -162,12 +163,25 @@ namespace YurtKayitSistemi
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(55)))), ((int)(((byte)(77)))));
+            this.label12.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(461, 55);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(244, 33);
+            this.label12.TabIndex = 55;
+            this.label12.Text = "Gelir İstatistikleri";
+            // 
             // FrmGelirIstatistik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(104)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(1135, 769);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.lblSecilenAyParası);
@@ -204,5 +218,6 @@ namespace YurtKayitSistemi
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label12;
     }
 }
